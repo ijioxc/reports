@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>認識軍工概念產業</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1112v">
+</head>
+<body>
+
+<header class="hero">
+  <img class="hero-bg" src="img/drone.jpg" alt="飛行中的單向攻擊無人機">
+  <div class="hero-shade"></div>
+  <p class="kicker">全球化的挑戰與因應｜軍工概念產業與美伊戰爭科技應用</p>
+  <h1>認識軍工概念產業</h1>
+  <p class="lead">從產品看懂訂單，從訂單看懂市場，再從市場看懂整個產業。</p>
+  <p class="by">C113142104 王宇峻　C112142235 張天翰　｜　授課老師　張家熏</p>
+  <p class="hint">滾一下或按 → ，前進一步；按 ← 退回一步</p>
+  <p class="hero-credit">飛行中的單向攻擊無人機｜圖：U.S. Department of Defense，轉引自 BBC</p>
+</header>
+
+<!-- S0 三角形目錄 -->
+<section class="scene" id="s0">
+  <p class="concl"><span>開場</span>四百年前公司自己打仗；今天國家打仗，公司造武器</p>
+  <div class="tri-wrap" id="triwrap">
+    <svg viewBox="200 0 800 700" preserveAspectRatio="xMidYMid meet" aria-label="三個重疊的圓：軍事、市場、企業">
+      <g class="venn">
+        <g class="vg" id="g-red"><circle class="vc red" cx="600" cy="290" r="180"/><text class="cname" x="600" y="186" text-anchor="middle">軍事</text><text class="cdet" x="600" y="222" text-anchor="middle">自己的軍隊與要塞</text></g>
+        <g class="vg" id="g-blk"><circle class="vc blk" cx="509" cy="448" r="180"/><text class="cname" x="425" y="522" text-anchor="middle">市場</text><text class="cdet" x="425" y="558" text-anchor="middle">國家特許的獨占</text></g>
+        <g class="vg" id="g-amb"><circle class="vc amb" cx="691" cy="448" r="180"/><text class="cname" x="775" y="522" text-anchor="middle">企業</text><text class="cdet" x="775" y="558" text-anchor="middle">公開發行股票</text></g>
+      </g>
+      <g id="voc">
+        <text class="big" x="600" y="418" text-anchor="middle">VOC</text>
+        <text class="sub" x="600" y="470" text-anchor="middle">荷蘭東印度公司　1602 年成立</text>
+      </g>
+    </svg>
+  </div>
+  <div class="caps">
+    <p class="cap">高中歷史學過：1624 年，荷蘭東印度公司開始在台南興建熱蘭遮城。這家公司同時握有三樣東西。</p>
+    <p class="cap">第一是軍事：它可以自己募兵、建要塞、和當地統治者締約，必要時自行作戰。</p>
+    <p class="cap">第二是市場：國家特許它獨占亞洲的貿易。</p>
+    <p class="cap">第三是企業：它是史上最早公開發行股票的公司之一。三個圓疊在一起的地方，就是它。</p>
+    <p class="cap">今天，這三樣東西分開了。打仗的權力回到國家手上，但戰爭背後的生意從來沒有消失。</p>
+  </div>
+  <p class="credit">成立與公開募股（1602）：World History Encyclopedia〈Dutch East India Company〉；「史上第一家」的說法學界有爭議，本頁寫作「最早之一」｜熱蘭遮城（1624 年築城，1627 年定名）：成功大學校刊、公視新聞網「跨‧1624」特展報導｜特許狀內容（獨占亞洲貿易 21 年、募兵、建要塞、締約、防禦性作戰）：UMass Dartmouth〈The VOC〉</p>
+</section>
+
+<!-- S1 + S2 成本對比 -->
+<section class="scene" id="s12" data-corner="red" data-chain="0">
+  <p class="concl"><span class="t-red">紅・軍事</span>一枚攔截彈的錢，可以買 82 到 205 架無人機；每打掉一架，就多一張訂單</p>
+  <div class="s12-main" id="s12main">
+    <div class="unit" id="msl">
+      <img src="img/patriot.jpg" alt="愛國者飛彈發射">
+      <div class="info h" id="msl-name"><b>愛國者 PAC-3 MSE 攔截彈</b><span>洛克希德馬丁製造｜不靠爆炸，直接撞毀目標</span></div>
+      <div class="price h" id="msl-price"><b id="msl-num">約 0 億元</b><span>一枚</span></div>
+    </div>
+    <div class="unit h" id="drn">
+      <img class="blend" src="img/shahed-size.webp" alt="Shahed-136 與人的身高對照：長 3.5 公尺、翼展 2.5 公尺">
+      <div class="info"><b>Shahed-136 無人機</b><span>伊朗製造｜長 3.5 公尺、翼展 2.5 公尺｜撞上去才引爆</span></div>
+      <div class="price"><b>64–159 萬元</b><span>一架</span></div>
+    </div>
+    <div class="bars h" id="bars">
+      <div class="barrow"><label>一枚攔截彈</label><div class="track"><i id="bar-m"></i></div><em>約 1.3 億元</em></div>
+      <div class="barrow"><label>一架無人機</label><div class="track"><i id="bar-d"></i></div><em>最貴 159 萬元</em></div>
+    </div>
+    <div class="count h" id="count">
+      <p>一枚攔截彈的錢 ＝ <b id="dcount">1</b> 架無人機　<small id="dnote"></small></p>
+      <div class="grid205" id="dgrid"></div>
+    </div>
+  </div>
+  <div class="plate h" id="plate">
+    <img src="img/night.jpg" alt="2021 年 5 月，加薩上空的攔截彈與火箭軌跡">
+    <h2 id="plate-h">無人機被打了下來，<br>帳單卻留著</h2>
+  </div>
+  <div class="order h" id="order">
+    <h3>訂單</h3>
+    <dl><dt>品項</dt><dd>PAC-3 MSE 攔截彈</dd><dt>數量</dt><dd>＋1 枚</dd><dt>原因</dt><dd>剛才打掉了一枚</dd><dt>下單人</dt><dd class="q">？</dd></dl>
+  </div>
+  <div class="caps">
+    <p class="cap">這三個圓就是全片的目錄，右上角會一直標出現在講到哪一個。先從紅色的軍事開始：今天公司造的武器，長這樣。</p>
+    <p class="cap">這是愛國者 PAC-3 MSE 攔截彈，由洛克希德馬丁製造。</p>
+    <p class="cap">一枚大約新台幣 1.3 億元。</p>
+    <p class="cap">2026 年 2 月 28 日美國與以色列空襲伊朗之後，伊朗用這個還手。因為它便宜，所以可以大量發射。</p>
+    <p class="cap">因為守方不能不攔，所以每一架都要用一枚攔截彈去換。把兩個價錢放在同一把尺上。</p>
+    <p class="cap">用無人機最貴的價錢算，一枚攔截彈的錢可以買 82 架。</p>
+    <p class="cap">用最便宜的價錢算，是 205 架。</p>
+    <p class="cap">攔截率很高，但每攔一架，都要付一次錢。所以每打掉一架，守方就得再買一枚。</p>
+    <p class="cap">這就是一張訂單。這張訂單是誰下的？</p>
+  </div>
+  <p class="credit">無人機單價：BBC News（2026/3/6）｜攔截彈單價約 410 萬美元：公開報導估計值（Quwa、Defence Security Asia）｜82 與 205 為本文以美元原價計算｜1 美元約 31.9 元（央行新臺幣/美元銀行間收盤匯率 31.875，2026/10/8）｜照片：愛國者發射，U.S. Department of Defense，經 AP 發布；Shahed 尺寸圖，BBC News Visual Journalism team（2026/3/6）；夜空：以色列鐵穹系統（左）攔截哈瑪斯自加薩北部發射的火箭（右），2021 年 5 月 14 日攝於加薩上空，非本次戰爭，攝影 Anas Baba／AFP via Getty Images</p>
+</section>
+
+<!-- S3 誰需要它 -->
+<section class="scene paper" id="s3" data-corner="blk" data-chain="1">
+  <p class="concl"><span class="t-blk">黑・市場</span>下訂單的只有國家，所以這個市場不歸看不見的手管</p>
+  <div class="order" id="order3">
+    <h3>訂單</h3>
+    <dl><dt>品項</dt><dd>PAC-3 MSE 攔截彈</dd><dt>數量</dt><dd>＋1 枚</dd><dt>原因</dt><dd>剛才打掉了一枚</dd><dt>下單人</dt><dd><span class="q" id="q3">？</span><span class="a" id="a3">政府</span></dd></dl>
+  </div>
+  <div class="s3-main h" id="s3main">
+    <div class="quotes">
+      <blockquote class="h" id="q-a">他追求的只是自己的利益，卻被一隻看不見的手引導，促成了並非他本意的目的。
+        <i>led by an invisible hand to promote an end which was no part of his intention</i>
+        <small>亞當・斯密《國富論》第四卷第二章，1776 年</small></blockquote>
+      <p class="same h" id="q-mid">同一本書，同一章</p>
+      <blockquote class="h" id="q-b">國防比富裕重要得多。
+        <i>Defence is of much more importance than opulence.</i>
+        <small>亞當・斯密《國富論》第四卷第二章，1776 年</small></blockquote>
+    </div>
+    <table class="cmp" id="cmp">
+      <thead class="h"><tr><th></th><th>一般市場</th><th>軍工市場</th></tr></thead>
+      <tbody>
+        <tr class="h"><th>買家</th><td>很多消費者與企業</td><td>幾乎只有政府</td></tr>
+        <tr class="h"><th>需求來源</th><td>景氣與喜好</td><td>威脅與國防預算</td></tr>
+        <tr class="h"><th>賣家</th><td>多，可以換一家買</td><td>少，常常只有一家能做</td></tr>
+        <tr class="h"><th>出口</th><td>自由買賣</td><td>每一筆都要政府核准</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="caps">
+    <p class="cap">飛彈不會擺在超商賣。下這張訂單的，只有國家。</p>
+    <p class="cap">一般的市場怎麼運作？亞當・斯密說，每個人追求自己的利益，卻被一隻看不見的手引導。</p>
+    <p class="cap">但在同一章，他也寫了另一句：國防比富裕重要得多。</p>
+    <p class="cap">因為連提出看不見的手的人，都承認國防不能完全交給市場，所以軍工的市場長得不一樣。先看買家。</p>
+    <p class="cap">需求不看景氣和喜好，看的是威脅。</p>
+    <p class="cap">賣家很少，常常只有一家能做。</p>
+    <p class="cap">連賣給誰，都要政府點頭。所以軍工產業，就是這個例外的現代版本。</p>
+  </div>
+  <p class="credit">引文：Adam Smith, <i>The Wealth of Nations</i>, Book IV, Chapter II（第二句原文為 As defence, however, is of much more importance than opulence…）｜中文為本文翻譯；通行中譯本見謝宗林、李華夏譯《國富論》，先覺出版（卷四在《國富論 II》，2005）</p>
+</section>
+
+<!-- S4 沒被攻擊為什麼還要買 -->
+<section class="scene paper" id="s4" data-corner="blk" data-chain="2">
+  <p class="concl"><span class="t-blk">黑・市場</span>沒被攻擊也要買，因為買的是「讓對方不敢動手」</p>
+  <div class="s4-main">
+    <div>
+      <div class="bignum h" id="s4num"><b>1 兆 1,225 億元</b><span>台灣 2027 年度國防預算案，占 GDP 3.01%，首度超過 1 兆元</span></div>
+      <ul class="why" id="why">
+        <li>威懾<span>讓對方不敢動手</span></li>
+        <li>軍事平衡<span>對方多了，自己不能少</span></li>
+        <li>預防性投資<span>等到開戰才買，來不及</span></li>
+      </ul>
+    </div>
+    <div class="scale h" id="scale">
+      <svg viewBox="0 0 600 390" aria-label="天平">
+        <path d="M300,130 V330 M240,330 H360" stroke="#7d7d7d" stroke-width="6" fill="none"/>
+        <g id="beam">
+          <path d="M90,130 H510" stroke="#1B1A18" stroke-width="6"/>
+          <g fill="#8A857B">
+            <rect x="56" y="98" width="68" height="24"/><rect x="56" y="68" width="68" height="24"/><rect x="56" y="38" width="68" height="24"/>
+            <rect id="wl" x="56" y="8" width="68" height="24" fill="#C8482B" opacity="0"/>
+          </g>
+          <g fill="#1B1A18">
+            <rect x="476" y="98" width="68" height="24"/><rect x="476" y="68" width="68" height="24"/><rect x="476" y="38" width="68" height="24"/>
+            <rect id="wr" x="476" y="8" width="68" height="24" opacity="0"/>
+          </g>
+        </g>
+        <circle cx="300" cy="130" r="9" fill="#1B1A18"/>
+        <text x="90" y="375" text-anchor="middle" fill="#8A857B" font-size="24">鄰國</text>
+        <text x="510" y="375" text-anchor="middle" fill="#1B1A18" font-size="24">自己</text>
+      </svg>
+    </div>
+  </div>
+  <div class="caps">
+    <p class="cap">台灣沒有在打仗，2027 年度的國防預算卻首度超過 1 兆元。沒被攻擊，為什麼還要買？</p>
+    <p class="cap">因為武器買來的第一個用途不是使用，而是讓對方不敢動手。這叫威懾。</p>
+    <p class="cap">因為鄰國多買了，自己沒有跟上，平衡就會倒向一邊。</p>
+    <p class="cap">因為等到開戰才買來不及，所以要在沒事的時候先買。這個市場的需求，看的是威脅，不是景氣。</p>
+  </div>
+  <p class="credit">台灣 2027 年度國防預算案：中央社 Focus Taiwan（2026/8）｜天平為示意圖，方塊不代表實際數量</p>
+</section>
+
+<!-- S5 為什麼不是想生產就能生產 -->
+<section class="scene paper" id="s5" data-corner="blk" data-chain="2">
+  <p class="concl"><span class="t-blk">黑・市場</span>有錢也不能馬上買到，因為做得出來的產能有限</p>
+  <div class="s5-main">
+    <div class="bignum"><b id="s5num">約 2,330 枚</b><span id="s5lab">開戰前，美國的愛國者攔截彈庫存</span></div>
+    <div class="grid233" id="sgrid"></div>
+    <p class="legend">每一格代表 10 枚　<i class="k on"></i>庫存　<i class="k used"></i>已用掉　<i class="k prod"></i>一年的產量　<i class="k back"></i>補回來的</p>
+  </div>
+  <div class="scalefig h" id="scalefig">
+    <p class="sf-key"><i></i>10 公尺　｜　三種裝備，同一個比例尺</p>
+    <div class="sf-row">
+      <figure style="--len:7"><div class="pic"><img src="img/himars.png" alt="海馬斯多管火箭"></div><figcaption><b>海馬斯</b>多管火箭｜洛克希德馬丁</figcaption><dl><dt>單價</dt><dd>約 1.5 億元</dd><dt>數量</dt><dd>約 750 輛</dd></dl></figure>
+      <figure style="--len:13.56"><div class="pic"><img src="img/f22front.png" alt="F-22 匿蹤戰機正面"></div><figcaption><b>F-22 猛禽</b>匿蹤戰機｜洛克希德馬丁</figcaption><dl><dt>單價</dt><dd>約 46 億元</dd><dt>數量</dt><dd>187 架</dd></dl></figure>
+      <figure style="--len:51.75"><div class="pic"><img src="img/c17front.png" alt="C-17 運輸機正面"></div><figcaption><b>C-17 全球霸王</b>運輸機｜波音</figcaption><dl><dt>單價</dt><dd>約 64 億元</dd><dt>數量</dt><dd>279 架</dd></dl></figure>
+    </div>
+  </div>
+  <div class="caps">
+    <p class="cap">開戰前，美國大約有 2,330 枚愛國者攔截彈。</p>
+    <p class="cap">開戰不到半年，用掉將近三分之二，只剩大約 800 枚。</p>
+    <p class="cap">有預算，為什麼不馬上補？因為這種飛彈只有洛克希德馬丁能做，新廠商要通過國家認證才能加入，而工廠一年只做得出大約 600 枚。</p>
+    <p class="cap">所以光是補回原本的數量，就要兩年半以上。</p>
+    <p class="cap">不只飛彈如此。武器的價錢看的是技術門檻和生產數量：F-22 原本計畫做大約 750 架，最後只買了 187 架。</p>
+  </div>
+  <p class="credit">庫存：CSIS 估計（2026/7/27），開戰前約 2,330 枚、現剩 759–827 枚，見 19FortyFive（2026/8/7）；「用掉將近三分之二」見 Stars and Stripes（2026/8/3）｜年產量：Reuters、The Defense Post｜兩年半為本文計算（1,530 枚 ÷ 600 枚）｜裝備圖：F-22、C-17 單價為美國空軍 Fact Sheet（C-17 為 1998 年幣值），海馬斯為 2024 年度美國陸軍採購價，數量截至 2025 年 11 月；C-17 的 279 架含外銷</p>
+</section>
+
+<!-- S6 為什麼只有少數幾家 -->
+<section class="scene paper" id="s6" data-corner="blk" data-chain="2">
+  <p class="concl"><span class="t-blk">黑・市場</span>賣家只剩少數幾家，因為國家要求它們合併</p>
+  <div class="s6-main" id="s6main"><svg id="s6svg" viewBox="0 0 1200 470" preserveAspectRatio="xMidYMid meet" aria-label="51 家合併成 5 家"></svg></div>
+  <dl class="defs h" id="defs">
+    <dt>企業</dt><dd>靠賣產品或服務賺錢的組織。<small>例：台積電賣晶片，買家是很多家公司</small></dd>
+    <dt>軍工企業</dt><dd>產品是武器與軍事裝備的企業，買家幾乎只有政府。<small>例：洛克希德馬丁賣攔截彈，買家是美國政府和它同意的盟友</small></dd>
+    <dt>軍工產業</dt><dd>這些企業，加上唯一的買家和買家訂的規則。<small>規則包括國防預算、軍品認證、出口許可</small></dd>
+  </dl>
+  <div class="caps">
+    <p class="cap">1993 年冷戰結束，預算縮減。美國國防部請主要軍火商的執行長吃了一頓晚餐，告訴他們：訂單養不起這麼多家，政府鼓勵合併。</p>
+    <p class="cap">這頓飯後來被稱為「最後的晚餐」。之後諾斯洛普買下格魯曼（1994），洛克希德與馬丁瑪麗埃塔合併（1995），波音買下麥道（1997）。</p>
+    <p class="cap">美國的航太與國防主承包商，從 51 家變成 5 家。</p>
+    <p class="cap">這五家各有代表作：洛克希德馬丁的 F-35、RTX 的愛國者雷達、諾斯洛普格魯曼的 B-21、通用動力的艾布蘭戰車、波音的 F-15EX。</p>
+    <p class="cap">因為買家只有一個，所以連賣家有幾家，也是買家決定的。1961 年艾森豪卸任時，替這種關係取了名字：軍工複合體。</p>
+    <p class="cap">到這裡，可以把三個詞分清楚：企業、軍工企業、軍工產業。</p>
+    <p class="cap">因為買家是國家，所以需求、產能、賣家數量，都不由市場決定。接著跟著其中一家軍工企業，看錢怎麼流進去。</p>
+  </div>
+  <p class="credit">51 → 5、13 → 3：美國國防部〈State of Competition within the Defense Industrial Base〉（2022/2）｜圓點的分組為示意，不代表各家實際的合併來源｜武器照片（皆經去背）：F-35B，Alan Wilson，CC BY-SA 2.0；愛國者系統雷達（RTX 氮化鎵版原型），Boevaya mashina，CC BY-SA 4.0；B-21，Tech. Sgt. William OBrien／U.S. Air Force；M1 艾布蘭，Staff Sgt. Shane A. Cuomo／U.S. Air Force；F-15EX，Ethan Wagner／U.S. Air Force；以上取自 Wikimedia Commons</p>
+</section>
+
+<!-- S7 資金流動 -->
+<section class="scene paper" id="s7" data-corner="amb" data-chain="2">
+  <p class="concl"><span class="t-amb">金・企業</span>一筆預算要過八站，才會變成股價</p>
+  <div class="flow">
+    <svg id="flowsvg" viewBox="0 0 1200 290" preserveAspectRatio="xMidYMid meet" aria-label="資金流動八站"></svg>
+  </div>
+  <div class="panels" id="panels"></div>
+  <p class="credit">國防預算：SIPRI（2026/4）｜合約：Reuters、The Defense Post｜在手訂單、營收、毛利、獲利：洛克希德馬丁 2025 年報與 2026 年第二季財報，毛利依毛利率約 10% 推算｜本益比：Stock Analysis（2026/10/9 收盤）｜圓面積依金額比例｜1 美元約 31.9 元（央行新臺幣/美元銀行間收盤匯率 31.875，2026/10/8）</p>
+</section>
+
+<!-- S8 五個指標 -->
+<section class="scene paper" id="s8" data-corner="amb" data-chain="3">
+  <p class="concl"><span class="t-amb">金・企業</span>五個數字，就能讀懂一家軍工公司</p>
+  <ol class="ind-tabs" id="indtabs"></ol>
+  <div class="ind" id="ind"></div>
+  <div class="cards h" id="cards">
+    <div class="card"><h3>在手訂單</h3><div class="body"><div class="v">約 7.3 兆元<small>2026 年第二季</small></div><p>未來幾年的工作，已經排到哪裡</p></div></div>
+    <div class="card"><h3>營收成長率</h3><div class="body"><div class="v">＋6%<small>2025 年</small></div><p>交貨的速度，有沒有變快</p></div></div>
+    <div class="card"><h3>毛利率</h3><div class="body"><div class="v">約 10%<small>2025 年</small></div><p>每收 100 元，留下幾元</p></div></div>
+    <div class="card"><h3>EPS　每股盈餘</h3><div class="body"><div class="v">約 685 元<small>21.49 美元，2025 年</small></div><p>每一股分到多少獲利</p></div></div>
+    <div class="card"><h3>本益比</h3><div class="body"><div class="v">約 19 倍<small>2026/10/9 收盤</small></div><p>照現在的賺法，幾年賺回股價</p></div></div>
+  </div>
+  <div class="caps">
+    <p class="cap">剛才八站裡留下的五個數字，就是五個指標。第一個是在手訂單：軍工公司最先看它。</p>
+    <p class="cap">第二個是營收成長率：訂單要交了貨才算收入，所以它看的是交貨有沒有變快。</p>
+    <p class="cap">第三個是毛利率：每收 100 元，扣掉製造成本後留下幾元。賣硬體的軍工公司，留下的不多。</p>
+    <p class="cap">第四個是 EPS：把獲利平分給每一股。</p>
+    <p class="cap">第五個是本益比：股價除以 EPS，也就是照現在的賺法，要幾年才賺回股價。</p>
+    <p class="cap">題目裡的「概念」兩個字，要看這一列。雷虎的本益比約 355 倍：股價反映的是市場的期待，還不是獲利。</p>
+    <p class="cap">這是洛克希德馬丁的五個數字。因為訂單先到、錢後到，所以先看訂單，再看它留得下多少。</p>
+  </div>
+  <p class="credit">洛克希德馬丁、RTX：2025 年報與 2026 年第二季財報｜Palantir、台積電：2025 年財報｜漢翔營收：工商時報（2026/5）｜毛利率為 2025 年度，整理自各公司財報｜本益比以近四季 EPS 計算：美股 Stock Analysis（2026/10/9 收盤）、台股 Yahoo 股市（2026/10/8 收盤）｜RTX 的訂單含民用航太；雷虎未揭露在手訂單｜1 美元約 31.9 元（央行新臺幣/美元銀行間收盤匯率 31.875，2026/10/8）</p>
+</section>
+
+<!-- S8W 用五個數字看美伊戰爭 -->
+<section class="scene paper" id="s8w" data-corner="red" data-chain="3">
+  <p class="concl"><span class="t-red">回到戰場</span>用這五個數字，重看美伊戰爭</p>
+  <table class="ledger" id="ledger">
+    <thead><tr><th>看哪個數字</th><th>戰爭中發生的事</th><th>數字</th></tr></thead>
+    <tbody>
+      <tr><th>消耗</th><td>開戰不到半年，用掉大約 1,500 枚愛國者攔截彈</td><td>2,330 → 約 800 枚</td></tr>
+      <tr><th>在手訂單</th><td>PAC-3 七年期合約上限約 1.8 兆元；THAAD 多年期合約約 1.1 兆元</td><td>6.2 → 7.3 兆元</td></tr>
+      <tr><th>營收成長率</th><td>工廠一年只做得出大約 600 枚，目標 2030 年底才到 2,000 枚</td><td>第二季年增 11%</td></tr>
+      <tr><th>毛利率</th><td>1.8 兆元分七年交貨，一年約 2,600 億元，其中毛利約 260 億元</td><td>約 10%</td></tr>
+      <tr><th>EPS</th><td>公司把 2026 年全年預估調高到大約 30 美元</td><td>685 → 約 955–977 元</td></tr>
+      <tr><th>本益比與股價</th><td>軍費增加在開戰前就已經算進股價；開戰後兩個月，大盤漲 3.5%</td><td>軍工 ETF −12%</td></tr>
+    </tbody>
+  </table>
+  <div class="versus h" id="versus">
+    <div><b>＋19%</b><span>洛克希德馬丁的在手訂單<br>2025 年底 → 2026 年第二季</span></div>
+    <div><b>−12%</b><span>美國軍工 ETF 的股價<br>開戰後兩個月</span></div>
+  </div>
+  <div class="caps">
+    <p class="cap">現在用這五個數字，回頭看美伊戰爭。開戰不到半年，美國用掉了大約 1,500 枚愛國者攔截彈。</p>
+    <p class="cap">打掉的要補，所以訂單先到：洛克希德馬丁的在手訂單從 6.2 兆增加到 7.3 兆元，創下新高。</p>
+    <p class="cap">但訂單要交了貨才算營收。工廠一年只做得出大約 600 枚，所以營收只多了一成左右。</p>
+    <p class="cap">毛利率沒有因為打仗變高。1.8 兆元的合約分七年交，每年留下的毛利大約 260 億元。</p>
+    <p class="cap">公司把今年的 EPS 預估調高到大約 30 美元，比去年多了大約四成。</p>
+    <p class="cap">股價卻沒有跟著漲。因為軍費增加在開戰前就已經算進股價，開戰後兩個月，軍工 ETF 反而跌了 12%。</p>
+    <p class="cap">所以戰爭對軍火商的好處，來得比新聞慢，也比訂單的數字小。</p>
+  </div>
+  <p class="credit">庫存：CSIS 估計（2026/7/27）｜PAC-3 合約與產量目標：Reuters、The Defense Post｜在手訂單、THAAD 合約（350 億美元）、第二季營收、全年 EPS 預估（29.95–30.65 美元）：洛克希德馬丁 2026 年第二季財報，見 GovConWire（2026/7）｜每年 2,600 億與 260 億元為本文依合約上限與毛利率約 10% 估算｜股價：CNBC（2026/4/28）｜＋19% 為本文計算｜1 美元約 31.9 元（央行銀行間收盤匯率 31.875，2026/10/8）</p>
+</section>
+
+<!-- S9 收尾 -->
+<section class="scene" id="s9" data-chain="3">
+  <p class="concl"><span>收尾</span>從產品看懂訂單，從訂單看懂市場，再從市場看懂整個產業</p>
+  <div class="tri-wrap">
+    <svg viewBox="200 0 800 700" preserveAspectRatio="xMidYMid meet" aria-label="三個圓重疊成軍工產業">
+      <g class="venn">
+        <g class="vg" id="g9-red"><circle class="vc red" cx="600" cy="290" r="180"/><text class="cname" x="600" y="186" text-anchor="middle">軍事</text><text class="cdet" x="600" y="222" text-anchor="middle">產品：攔截彈與無人機</text></g>
+        <g class="vg" id="g9-blk"><circle class="vc blk" cx="509" cy="448" r="180"/><text class="cname" x="425" y="522" text-anchor="middle">市場</text><text class="cdet" x="425" y="558" text-anchor="middle">買家只有國家</text></g>
+        <g class="vg" id="g9-amb"><circle class="vc amb" cx="691" cy="448" r="180"/><text class="cname" x="775" y="522" text-anchor="middle">企業</text><text class="cdet" x="775" y="558" text-anchor="middle">八站、五個指標</text></g>
+      </g>
+      <g id="ctr9"><text class="core" x="600" y="390" text-anchor="middle">軍工</text><text class="core" x="600" y="436" text-anchor="middle">產業</text></g>
+    </svg>
+  </div>
+  <div class="caps">
+    <p class="cap">回到這三個圓。認識一間企業，從產品開始。</p>
+    <p class="cap">從產品看懂訂單，從訂單看懂市場。</p>
+    <p class="cap">再從市場，看懂整個產業。</p>
+    <p class="cap">三個圓疊在一起，就是軍工產業。一般的市場由看不見的手決定；軍工產業特殊在這裡，它由國家決定。</p>
+    <p class="cap">C113142104 王宇峻　C112142235 張天翰｜全球化的挑戰與因應｜授課老師　張家熏</p>
+  </div>
+  <p class="credit">本頁為課堂報告，內容不構成任何投資建議。各幕數據出處見該幕左下角。</p>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="app.js?v=1112v"></script>
+</body>
+</html>
