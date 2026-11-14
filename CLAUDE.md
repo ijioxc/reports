@@ -11,8 +11,8 @@
 | `dynamics/` | 動力學期末報告 | pptx2web 產生，`player.js` 播放 |
 | `hs-project/` | 高中專題 | pptx2web 產生，`player.js` 播放 |
 | `ev-motor-drive/` | 電動車馬達驅動 | 手寫單頁 |
-| `missile-journey/` | 通識報告，附 PDF | 手寫（`app.js`、`style.css`） |
-| `triangle-doc/` | 通識報告「認識軍工概念產業」滾動式網頁 | 手寫（GSAP 滾動，`app.js`、`style.css`、`img/`） |
+| `missile-journey/` | 通識報告「認識軍工概念產業」滾動式網頁（取代舊版） | 手寫（GSAP 滾動，`app.js`、`style.css`、`img/`） |
+| `triangle-doc/` | 轉址頁，指向 `missile-journey/` | 一個 index.html |
 
 - `player.js`、`player.css` 是共用播放器，改了會影響所有 pptx2web 產生的報告。
 - `media/` 很大，不要整個讀，要看哪張圖再讀那張。
