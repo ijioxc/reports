@@ -96,7 +96,7 @@ function computeStops() {
     }
   });
   const refs = document.querySelector('.refs');
-  if (refs) pts.push({y: Math.round(refs.getBoundingClientRect().top + scrollY), theme: 'ev', part: '5', no: TOTAL});
+  if (refs) pts.push({y: Math.round(refs.getBoundingClientRect().top + scrollY), theme: 'ev', part: '4', no: TOTAL});
   STOPS = pts;
 }
 const nearest = y => STOPS.reduce((b, p, i) => Math.abs(p.y - y) < Math.abs(STOPS[b].y - y) ? i : b, 0);

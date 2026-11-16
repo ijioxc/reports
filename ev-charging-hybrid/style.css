@@ -179,9 +179,13 @@ html.notes .caps { display: block; }
 /* 封面：目錄 */
 .agenda { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 0 5vw; pointer-events: none; }
 .agenda .ak { margin: 0 0 2rem; font-size: 1.1rem; font-weight: 700; color: var(--mute); letter-spacing: .15em; }
-.agenda .ag { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2rem; }
+.agenda .ag { display: grid; grid-template-columns: 1fr 1fr 1fr .7fr; gap: 2.4rem; }
+.agenda .ak { font-size: 1.6rem; color: var(--fg); letter-spacing: 0; }
+.agenda .ak span { color: var(--e); }
+.agenda .ab.last { border-top-color: #bbb; }
+.agenda .ab.last b { color: #999; }
 .agenda .ab { border-top: 4px solid var(--e); padding-top: 1rem; }
 .agenda .ab b { display: block; font-size: 3.4rem; line-height: 1; font-weight: 900; color: var(--e); }
-.agenda .ab h3 { margin: .8rem 0 .7rem; font-size: 1.7rem; font-weight: 900; line-height: 1.25; }
+.agenda .ab h3 { margin: .8rem 0 .7rem; font-size: 1.9rem; font-weight: 900; line-height: 1.25; }
 .agenda .ab p { margin: 0; font-size: 1.05rem; line-height: 1.8; color: var(--mute); }
 @media (max-width: 900px) { .agenda { justify-content: flex-start; padding-top: 4.5rem; } .agenda .ag { grid-template-columns: 1fr 1fr; gap: 1rem 1.2rem; } .agenda .ab b { font-size: 2rem; } .agenda .ab h3 { font-size: 1.2rem; margin: .4rem 0; } .agenda .ab p { font-size: .8rem; line-height: 1.5; } }
