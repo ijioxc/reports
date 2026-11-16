@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1117c">
+<link rel="stylesheet" href="style.css?v=1117e">
 </head>
 <body>
 
@@ -241,27 +241,37 @@
 </section>
 
 <!-- 第 7b 幕：豐田 vs 本田 -->
-<section class="scene" id="s7b" data-theme="ev" data-part="1" data-steps="2">
+<section class="scene" id="s7b" data-theme="ev" data-part="1" data-steps="3">
   <p class="concl"><small>結構・豐田與本田</small>豐田兩條路同時走，本田兩條路二選一</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="豐田與本田混動做法比較">
-    <image href="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/toyota.svg" x="200" y="50" width="100" height="100" class="logo"/>
-    <text x="250" y="210" class="c nm2">豐田 THS</text>
-    <text x="250" y="290" class="c num">同時分配</text>
-    <text x="250" y="330" class="c fact">引擎一開，動力同時分給輪子和發電機</text>
-    <image href="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/honda.svg" x="700" y="50" width="100" height="100" class="logo"/>
-    <text x="750" y="210" class="c nm2">本田 e:HEV</text>
-    <text x="750" y="290" class="c num">二選一切換</text>
-    <text x="750" y="330" class="c fact">平常只發電，高速才改成直接推</text>
-    <line class="sep" x1="500" y1="70" x2="500" y2="340"/>
+  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="豐田與本田在不同車速下由誰推輪子">
+    <g class="key" transform="translate(-250,0)"><rect class="seg o" x="700" y="10" width="34" height="20"/><text x="742" y="28">引擎直接推</text><rect class="seg e" x="880" y="10" width="34" height="20"/><text x="922" y="28">電（發電、馬達）</text></g>
+    <text x="440.0" y="86" class="c nm">豐田 THS</text>
+    <text x="790.0" y="86" class="c nm" data-s="2">本田 e:HEV</text>
+    <text x="20" y="147" class="nm">起步、低速</text><text x="20" y="227" class="nm">一般行駛</text><text x="20" y="307" class="nm">高速巡航</text>
+    <text x="20" y="384" class="nm">靠什麼做到</text>
+    <text x="440" y="352" class="c s">兩條路同時走，比例隨車速變</text>
+    <g>
+      <rect class="seg e3" x="290" y="110" width="300" height="58"/><text x="440.0" y="147" class="c">純電：馬達推</text>
+      <rect class="seg o" x="290" y="190" width="150" height="58"/><rect class="seg e" x="440" y="190" width="150" height="58"/><text x="365.0" y="227" class="c w">直接推</text><text x="515.0" y="227" class="c w">發電</text>
+      <rect class="seg o" x="290" y="270" width="225" height="58"/><rect class="seg e" x="515" y="270" width="75" height="58"/><text x="402.5" y="307" class="c w">直接推</text><text x="552.5" y="307" class="c w">發電</text>
+      <text x="440.0" y="384" class="c b">行星齒輪：連續調比例</text>
+    </g>
     <g data-s="2">
-      <text x="500" y="450" class="c b note">共同目標：讓引擎待在<tspan class="e">最有效率的轉速</tspan></text>
+      <rect class="seg e3" x="640" y="110" width="300" height="58"/><text x="790.0" y="147" class="c">純電：馬達推</text>
+      <rect class="seg e" x="640" y="190" width="300" height="58"/><text x="790.0" y="227" class="c w">只發電，馬達推</text>
+      <rect class="seg o" x="640" y="270" width="300" height="58"/><text x="790.0" y="307" class="c w">引擎直接推</text>
+      <text x="790.0" y="384" class="c b">離合器：二選一切換</text>
+    </g>
+    <g data-s="3">
+      <text x="500" y="460" class="c b note">共同目標：讓引擎待在<tspan class="e">最有效率的轉速</tspan></text>
     </g>
   </svg>
   <div class="caps">
-    <p class="cap">用同一個問題比兩家：引擎的動力怎麼走到輪子？豐田是兩條路同時走，行星齒輪把動力一部分直接推輪子、一部分拿去發電，比例連續調整。本田是兩條路二選一，平常引擎只發電，高速才用離合器改成直接推。</p>
+    <p class="cap">用同一個問題比兩家：每一種車速，是誰在推輪子？先看豐田。起步、低速是純電；一般行駛和高速，引擎同時做兩件事，一部分直接推輪子、一部分拿去發電。靠行星齒輪連續調比例，車速越高，直接推的比例越大。</p>
+    <p class="cap">再看本田。起步、低速一樣是純電；一般行駛時引擎只發電、馬達推車；到了高速巡航，才用離合器接上，改成引擎直接推。所以豐田是兩條路同時走，本田是兩條路二選一。</p>
     <p class="cap">路徑不同，目標一樣：讓引擎盡量待在最有效率的轉速。</p>
   </div>
-  <p class="src">Toyota、Honda 官方技術說明。Logo：Simple Icons</p>
+  <p class="src">Toyota、Honda 官方技術說明。比例為示意，實際依油門和電量隨時調整</p>
 </section>
 
 <!-- 第 5b 幕：依電池大小分 -->
@@ -270,13 +280,13 @@
   <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="依電池容量分類混動車">
     <!-- x = 200 + kWh × 14 -->
     <text x="40" y="118" class="nm">微混</text><rect class="bar e3" x="200" y="90" width="4" height="40" data-g="1"/><text x="218" y="110" class="v">≈ 0</text><text x="218" y="136" class="s">只有怠速熄火（12 V）</text>
-    <text x="40" y="206" class="nm">輕混</text><rect class="bar e3" x="200" y="178" width="14" height="40" data-g="1"/><text x="228" y="198" class="v">約 1 kWh</text><text x="228" y="224" class="s">48 V，只能輔助</text>
-    <text x="40" y="294" class="nm">全混</text><rect class="bar e2" x="200" y="266" width="22" height="40" data-g="1"/><text x="236" y="286" class="v">約 1.6 kWh</text><text x="236" y="312" class="s">能用純電起步</text>
-    <text x="40" y="382" class="nm">插電式</text><rect class="bar e" x="200" y="354" width="252" height="40" data-g="1" data-d=".1"/><text x="466" y="374" class="v">10–25 kWh</text><text x="466" y="400" class="s">可以插電，純電 50–100 km</text>
-    <text x="40" y="470" class="nm">增程式</text><rect class="bar e" x="200" y="442" width="560" height="40" data-g="1" data-d=".2"/><text x="774" y="462" class="v">30–45 kWh</text><text x="774" y="488" class="s">電池最大，純電最遠</text>
+    <text x="40" y="206" class="nm">輕混<tspan class="s"> MHEV</tspan></text><rect class="bar e3" x="200" y="178" width="14" height="40" data-g="1"/><text x="228" y="198" class="v">約 1 kWh</text><text x="228" y="224" class="s">48 V，只能輔助</text>
+    <text x="40" y="294" class="nm">全混<tspan class="s"> HEV</tspan></text><rect class="bar e2" x="200" y="266" width="22" height="40" data-g="1"/><text x="236" y="286" class="v">約 1.6 kWh</text><text x="236" y="312" class="s">能用純電起步</text>
+    <text x="40" y="382" class="nm">插電式<tspan class="s"> PHEV</tspan></text><rect class="bar e" x="200" y="354" width="252" height="40" data-g="1" data-d=".1"/><text x="466" y="374" class="v">10–25 kWh</text><text x="466" y="400" class="s">可以插電，純電 50–100 km</text>
+    <text x="40" y="470" class="nm">增程式<tspan class="s"> EREV</tspan></text><rect class="bar e" x="200" y="442" width="560" height="40" data-g="1" data-d=".2"/><text x="774" y="462" class="v">30–45 kWh</text><text x="774" y="488" class="s">電池最大，純電最遠</text>
   </svg>
   <div class="caps">
-    <p class="cap">第二件事，電池：能用電跑多遠。電池由小到大分成五種：只有怠速熄火的微混、48 伏的輕混、能用純電起步的全混，以及可以插電的插電式和增程式，容量從不到 1 度到 40 度以上。</p>
+    <p class="cap">第二件事，電池：能用電跑多遠。電池由小到大分成五種：只有怠速熄火的微混、48 伏的輕混 MHEV、能用純電起步的全混 HEV，以及可以插電的插電式 PHEV 和增程式 EREV，容量從不到 1 度到 40 度以上。</p>
   </div>
   <p class="src">電池容量為各類典型值</p>
 </section>
@@ -372,13 +382,14 @@
       <text x="720" y="220" class="c nm2">法拉利 849 Testarossa</text><text x="720" y="256" class="c cartype">插電式</text>
       <text x="720" y="340" class="c num">1,050 匹</text><text x="720" y="378" class="c fact">V8＋3 顆馬達</text>
     </g>
+    <text x="500" y="440" class="c s">另外，本田 Prelude 的 S+ Shift：用馬達模擬 8 速換檔的手感</text>
     <text x="500" y="500" class="c nm2" data-s="2">共同點：<tspan class="e">電補上引擎做不好的地方</tspan></text>
   </svg>
   <div class="caps">
-    <p class="cap">跑車也開始用混動。保時捷 911 GTS 用電動渦輪，馬達直接把渦輪轉起來，踩下去反應更快；法拉利 849 Testarossa 是插電式，V8 加三顆馬達，1,050 匹。跑車加電不是為了省油，是為了補力。</p>
+    <p class="cap">跑車也開始用混動。保時捷 911 GTS 用電動渦輪，馬達直接把渦輪轉起來，踩下去反應更快；法拉利 849 Testarossa 是插電式，V8 加三顆馬達，1,050 匹。跑車加電不是為了省油，是為了補力。本田新款 Prelude 還有 S+ Shift，車上沒有變速箱，但用馬達和引擎轉速模擬 8 速換檔的手感，連引擎聲都配合，這是拿電來補開車的樂趣。</p>
     <p class="cap">共同點是：電補上引擎做不好的地方。家用車在起步、低速時用電省油；跑車在渦輪還沒轉起來的那一下用電補力。</p>
   </div>
-  <p class="src">GreenCars（911 GTS T-Hybrid）；CarExpert（849 Testarossa）。Logo：Simple Icons</p>
+  <p class="src">GreenCars（911 GTS T-Hybrid）；CarExpert（849 Testarossa）；Honda News、visor.ph（Prelude S+ Shift）。Logo：Simple Icons</p>
 </section>
 
 <!-- 第 10 幕：結論 -->
@@ -416,6 +427,6 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="app.js?v=1117c"></script>
+<script src="app.js?v=1117e"></script>
 </body>
 </html>
