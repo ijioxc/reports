@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1116w">
+<link rel="stylesheet" href="style.css?v=1116x">
 </head>
 <body>
 
@@ -208,6 +208,29 @@
   <p class="src">車速分段為示意</p>
 </section>
 
+<!-- 第 8c 幕：增程式的代價 -->
+<section class="scene" id="s8c" data-theme="ev" data-part="1" data-steps="2">
+  <p class="concl"><small>結構・先發電的代價</small>油先變電再推車，高速會多損失一截</p>
+  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="引擎直接推輪子和先發電再推輪子的效率比較">
+    <g class="key" transform="translate(-300,0)"><line x1="700" y1="22" x2="740" y2="22" class="o"/><text x="748" y="29">引擎（機械）</text><line x1="900" y1="22" x2="940" y2="22" class="eL"/><text x="948" y="29">電</text></g>
+    <text x="20" y="110" class="nm">直接推</text>
+    <text x="180" y="110" class="s">引擎</text><line class="o" x1="240" y1="102" x2="420" y2="102"/><text x="440" y="110" class="s">齒輪</text><line class="o" x1="500" y1="102" x2="680" y2="102"/><text x="700" y="110" class="s">輪子</text>
+    <text x="20" y="200" class="nm">先發電</text>
+    <text x="180" y="200" class="s">引擎</text><line class="o" x1="240" y1="192" x2="300" y2="192"/><text x="310" y="200" class="s">發電機</text><line class="eL" x1="390" y1="192" x2="450" y2="192"/><text x="460" y="200" class="s">逆變器</text><line class="eL" x1="540" y1="192" x2="600" y2="192"/><text x="610" y="200" class="s">馬達</text><line class="eL" x1="666" y1="192" x2="690" y2="192"/><text x="700" y="200" class="s">輪子</text>
+    <g data-s="2">
+      <text x="20" y="300" class="rowt">引擎輸出有幾成送到輪子（示意估算）</text>
+      <!-- width = % × 6 -->
+      <text x="20" y="372" class="nm">直接推</text><rect class="bar o" x="180" y="346" width="570" height="40" data-g="2"/><text x="762" y="374" class="v">約 95%</text>
+      <text x="20" y="452" class="nm">先發電</text><rect class="bar e" x="180" y="426" width="510" height="40" data-g="2" data-d=".1"/><text x="702" y="454" class="v e">約 85%</text>
+    </g>
+  </svg>
+  <div class="caps">
+    <p class="cap">為什麼本田高速要接離合器？因為先發電有代價。引擎直接推輪子，中間只隔一組齒輪；串聯式要先發電，經過發電機、逆變器、馬達三關，每一關都會損失一點。</p>
+    <p class="cap">粗估下來，直接推大約 95% 送到輪子，先發電大約 85%，多損失一成。所以結構的選擇其實是取捨：低速讓引擎只發電，高速讓引擎直接推輪子比較省。</p>
+  </div>
+  <p class="src">效率為各元件典型值相乘的示意估算（發電機、逆變器、馬達各約 95%），非實測</p>
+</section>
+
 <!-- 第 7b 幕：豐田 vs 本田 -->
 <section class="scene" id="s7b" data-theme="ev" data-part="1" data-steps="2">
   <p class="concl"><small>結構・豐田與本田</small>做法不同，目標一樣</p>
@@ -273,25 +296,9 @@
   <div class="caps">
     <p class="cap">插電式混動就是全混再加大電池和充電孔：電池 10 到 20 度，純電可以跑 50 到 100 公里，日常通勤幾乎用電。</p>
     <p class="cap">現在賣最多的是比亞迪 DM-i，第五代引擎熱效率 46%，沒電時油耗 100 公里 2.9 公升，一般油車大約 7 公升；油加滿、電充滿可以跑 2,100 公里。這是官方最好的數字。</p>
-    <p class="cap">增程式是另一種插電：電池更大，引擎只發電、從不推輪子，在中國很流行。但只發電也有代價，後面會講。</p>
+    <p class="cap">增程式是另一種插電：電池更大，引擎只發電、從不推輪子，在中國很流行。前面講過，只發電在高速會多損失一成。</p>
   </div>
   <p class="src">CnEVPost（2024/5/28）；Wikipedia「BYD Qin L DM-i」。2.9 L 為官方虧電最佳值</p>
-</section>
-
-<!-- 第 8b 幕：插電式市場 -->
-<section class="scene" id="s8b" data-theme="ev" data-part="2" data-steps="3">
-  <p class="concl"><small>電池・2026 插電市場</small>中國插電車在國內賣不動，轉往歐洲</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="2026 年插電式混動市場的三個數字">
-    <text x="20" y="150" class="num big2">33.2%</text><text x="330" y="134" class="nm2">全球新車是電動化車種</text><text x="330" y="166" class="s">含油電混合，2026 第二季</text>
-    <g data-s="2"><text x="20" y="300" class="num big2">−25%</text><text x="330" y="284" class="nm2">中國插電式銷量</text><text x="330" y="316" class="s">2026 年 1–9 月，和去年同期比</text></g>
-    <g data-s="3"><text x="20" y="450" class="num big2">14→29%</text><text x="330" y="434" class="nm2">歐洲插電車裡的中國製</text><text x="330" y="466" class="s">2025 年 → 2026 年至今</text></g>
-  </svg>
-  <div class="caps">
-    <p class="cap">看市場。2026 年第二季，全球新車有 33% 是電動化車種，這個數字有算油電混合。</p>
-    <p class="cap">但中國插電式 1 到 9 月少了 25%，國內賣不動。</p>
-    <p class="cap">所以中國車廠把插電車賣到歐洲，在歐洲插電車裡的占比從 14% 升到 29%。</p>
-  </div>
-  <p class="src">TrendForce（2026/8/25）；Benchmark Mineral Intelligence（經 Future Market Insights 轉述）</p>
 </section>
 
 <!-- 第 5c 幕：混動為什麼省油 -->
@@ -315,29 +322,6 @@
     <p class="cap">換成油電版，市區從 7.4 降到 4.4 公升，省四成；高速只從 5.7 降到 5.1，省一成。因為這三招都發生在走走停停的時候，高速一直巡航，就沒什麼好回收的。</p>
   </div>
   <p class="src">美國 EPA 油耗標示（fueleconomy.gov），2026 Corolla LE 汽油 32/41 mpg、Hybrid LE 53/46 mpg，換算成 L/100 km</p>
-</section>
-
-<!-- 第 8c 幕：增程式的代價 -->
-<section class="scene" id="s8c" data-theme="ev" data-part="3" data-steps="2">
-  <p class="concl"><small>用途・代價</small>油先變電再推車，高速會多損失一截</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="引擎直接推輪子和先發電再推輪子的效率比較">
-    <g class="key" transform="translate(-300,0)"><line x1="700" y1="22" x2="740" y2="22" class="o"/><text x="748" y="29">引擎（機械）</text><line x1="900" y1="22" x2="940" y2="22" class="eL"/><text x="948" y="29">電</text></g>
-    <text x="20" y="110" class="nm">直接推</text>
-    <text x="180" y="110" class="s">引擎</text><line class="o" x1="240" y1="102" x2="420" y2="102"/><text x="440" y="110" class="s">齒輪</text><line class="o" x1="500" y1="102" x2="680" y2="102"/><text x="700" y="110" class="s">輪子</text>
-    <text x="20" y="200" class="nm">先發電</text>
-    <text x="180" y="200" class="s">引擎</text><line class="o" x1="240" y1="192" x2="300" y2="192"/><text x="310" y="200" class="s">發電機</text><line class="eL" x1="390" y1="192" x2="450" y2="192"/><text x="460" y="200" class="s">逆變器</text><line class="eL" x1="540" y1="192" x2="600" y2="192"/><text x="610" y="200" class="s">馬達</text><line class="eL" x1="666" y1="192" x2="690" y2="192"/><text x="700" y="200" class="s">輪子</text>
-    <g data-s="2">
-      <text x="20" y="300" class="rowt">引擎輸出有幾成送到輪子（示意估算）</text>
-      <!-- width = % × 6 -->
-      <text x="20" y="372" class="nm">直接推</text><rect class="bar o" x="180" y="346" width="570" height="40" data-g="2"/><text x="762" y="374" class="v">約 95%</text>
-      <text x="20" y="452" class="nm">先發電</text><rect class="bar e" x="180" y="426" width="510" height="40" data-g="2" data-d=".1"/><text x="702" y="454" class="v e">約 85%</text>
-    </g>
-  </svg>
-  <div class="caps">
-    <p class="cap">增程式聽起來很理想：引擎只發電，永遠待在最省油的轉速。但它有代價。引擎直接推輪子，中間只隔一組齒輪；先發電的話，要經過發電機、逆變器、馬達三關，每一關都會損失一點。</p>
-    <p class="cap">粗估下來，直接推大約 95% 送到輪子，先發電大約 85%，多損失一成。市區靠回收補得回來，高速巡航就補不回來。所以本田才在高速把離合器接上，讓引擎直接推輪子。</p>
-  </div>
-  <p class="src">效率為各元件典型值相乘的示意估算（發電機、逆變器、馬達各約 95%），非實測</p>
 </section>
 
 <!-- 第 9 幕：2026 家用混動車 -->
@@ -392,21 +376,21 @@
 <!-- 第 10 幕：結論 -->
 <section class="scene" id="s10" data-theme="ev" data-part="4" data-steps="3">
   <p class="concl">引擎的任務更多用於發電</p>
-  <div class="cols">
-    <div class="col l"><p class="q"><b>引擎</b>：從推輪子變發電機</p><p class="qn">豐田分配 → 本田多半發電 → 增程只發電<br>但高速時，直接推還是比較省</p></div>
-    <div class="col r"><p class="q"><b>電</b>：做引擎做不好的事</p><p class="qn">市區省 4 成、高速省 1 成<br>2026 新車：家用車省油、跑車補力</p></div>
+  <div class="cols c3">
+    <div class="col"><p class="qk3">結構</p><p class="q">引擎越來越常<br>只發電</p><p class="qn">高速時直接推輪子還是比較省</p></div>
+    <div class="col"><p class="qk3">電池</p><p class="q">電池越大<br>越能只用電</p><p class="qn">插電式短程當電車，長途當油車</p></div>
+    <div class="col"><p class="qk3">用途</p><p class="q">家用車省油<br>跑車補力</p><p class="qn">電負責引擎做不好的事</p></div>
   </div>
-  <div class="watch" data-s="2">
+  <div class="watch w3" data-s="2">
     <p class="wk">未來看什麼</p>
-    <div class="w"><b>33.2%</b>全球新車電動化<small>含油電，2026 Q2</small></div>
-    <div class="w"><b>−25%</b>中國插電式銷量<small>2026 年 1–9 月</small></div>
-    <div class="w"><b>29%</b>歐洲插電車裡的中國製<small>2026 年至今</small></div>
-    <div class="w"><b>46%</b>引擎熱效率<small>比亞迪第五代 DM</small></div>
+    <div class="w"><b>46%</b>引擎熱效率<small>結構：引擎只發電，效率還能多高（比亞迪第五代）</small></div>
+    <div class="w"><b>135 km</b>插電車純電距離<small>電池：RAV4 插電版，台灣 2026/6 上市</small></div>
+    <div class="w"><b>33.2%</b>全球新車電動化<small>用途：含油電，2026 Q2</small></div>
   </div>
   <p class="end" data-s="3">謝謝大家　<span>↓ 往下是參考資料</span></p>
   <div class="caps">
-    <p class="cap">三件事看下來，引擎的任務更多用於發電：從豐田的齒輪分配、本田的多半只發電，到增程式完全只發電。但高速時引擎直接推輪子還是比較省，所以高速時它仍會直接推輪子。電則負責引擎做不好的事：市區省四成油，家用車拿來省油，跑車拿來補力。</p>
-    <p class="cap">未來可以看四個數字：全球新車電動化比例、中國插電式銷量、歐洲插電車裡的中國製占比，還有引擎熱效率還能不能再往上。</p>
+    <p class="cap">三件事看下來。結構：引擎越來越常只負責發電，但高速時直接推輪子還是比較省。電池：電池越大，越能只用電跑，插電式短程就是電車。用途：家用車拿電省油，跑車拿電補力，電負責引擎做不好的事。合起來，引擎的任務更多用於發電。</p>
+    <p class="cap">未來可以照這三件事各看一個數字：結構看引擎熱效率還能不能往上；電池看插電車的純電距離能拉多長；用途看全球新車有多少比例用到電。</p>
     <p class="cap">資料來源都在最後。謝謝大家。</p>
   </div>
 </section>
@@ -419,12 +403,12 @@
     <li>CnEVPost：BYD launches 5th-gen DM tech（2024/5/28）。Wikipedia：BYD Qin L DM-i。</li>
     <li>Toyota USA Newsroom：2026 RAV4。Honda News：2026 Honda Prelude Press Kit。TVBS 車勢、U-CAR：台灣 RAV4 上市與 RAV4 PHEV（2026/1、2026/6）。</li>
     <li>Nissan News、CarExpert：2026 Qashqai e-POWER。Jalopnik、Cars.com：2026 Hyundai Palisade Hybrid。GreenCars：Porsche 911 GTS T-Hybrid。CarExpert：Ferrari 849 Testarossa。</li>
-    <li>TrendForce：Global NEV Sales Rise 10.4% YoY in 2Q26（2026/8/25）。Benchmark Mineral Intelligence（經 Future Market Insights 轉述）。</li>
+    <li>TrendForce：Global NEV Sales Rise 10.4% YoY in 2Q26（2026/8/25）。</li>
   </ol>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="app.js?v=1116w"></script>
+<script src="app.js?v=1116x"></script>
 </body>
 </html>

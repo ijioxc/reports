@@ -189,3 +189,10 @@ html.notes .caps { display: block; }
 .agenda .ab h3 { margin: .8rem 0 .7rem; font-size: 3.6rem; font-weight: 900; line-height: 1.25; }
 .agenda .ab p { margin: 0; font-size: 1.5rem; line-height: 1.8; color: var(--mute); }
 @media (max-width: 900px) { .agenda { justify-content: flex-start; padding-top: 4.5rem; } .agenda .ag { grid-template-columns: 1fr 1fr; gap: 1rem 1.2rem; } .agenda .ab b { font-size: 2rem; } .agenda .ab h3 { font-size: 1.2rem; margin: .4rem 0; } .agenda .ab p { font-size: .8rem; line-height: 1.5; } }
+
+/* 結論：三欄對應 結構／電池／用途 */
+#s10 .cols.c3 { grid-template-columns: repeat(3, 1fr); }
+#s10 .c3 .q { font-size: 2.2rem; }
+#s10 .c3 .qk3 { margin: 0; font-size: 1.1rem; font-weight: 900; color: var(--e); letter-spacing: .1em; }
+#s10 .watch.w3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 700px) { #s10 .cols.c3 { grid-template-columns: 1fr; } #s10 .c3 .q { font-size: 1.3rem; } }
