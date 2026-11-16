@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1116y">
+<link rel="stylesheet" href="style.css?v=1116z">
 </head>
 <body>
 
@@ -193,19 +193,19 @@
     <rect class="whl" x="830" y="76" width="60" height="68" rx="10"/><text x="860" y="64" class="c s">輪子</text>
     <rect class="mech" x="420" y="190" width="140" height="40" rx="8"/><text x="490" y="216" class="c">離合器</text>
     <!-- 車速軸：x = 100 + km/h × 5.7 -->
-    <text x="100" y="292" class="rowt">什麼時候用哪一種（示意）</text>
+    <text x="100" y="292" class="rowt">什麼時候用哪一種（約略車速）</text>
     <rect class="seg e3" x="100" y="310" width="228" height="44"/><text x="214" y="338" class="c">純電</text>
-    <rect class="seg e" x="328" y="310" width="285" height="44"/><text x="470" y="338" class="c w">引擎發電、馬達推車</text>
-    <rect class="seg o" x="613" y="310" width="285" height="44" data-s="2"/><text x="755" y="338" class="c w" data-s="2">引擎直接推（高速巡航）</text>
+    <rect class="seg e" x="328" y="310" width="256" height="44"/><text x="456" y="338" class="c w">引擎發電、馬達推車</text>
+    <rect class="seg o" x="584" y="310" width="314" height="44" data-s="2"/><text x="741" y="338" class="c w" data-s="2">引擎直接推（高速巡航）</text>
     <line class="ax" x1="100" y1="362" x2="900" y2="362"/>
-    <text x="100" y="388" class="s">0</text><text x="328" y="388" class="s c">低速</text><text x="613" y="388" class="s c">中速、加速</text><text x="900" y="388" class="s" text-anchor="end">高速 km/h</text>
+    <text x="100" y="388" class="s">0</text><text x="328" y="388" class="s c">約 40</text><text x="584" y="388" class="s c">約 85</text><text x="900" y="388" class="s" text-anchor="end">140 km/h</text>
     </g>
   </svg>
   <div class="caps">
-    <p class="cap">本田 e:HEV 走另一條路：兩顆馬達，一顆發電、一顆推車，沒有傳統變速箱。低速是純電，大部分時間是引擎發電、馬達推車，也就是串聯式。</p>
-    <p class="cap">只有高速巡航、引擎效率最好的時候，離合器才接合，引擎直接推輪子，深灰色的線這時才碰到輪子。所以豐田靠齒輪分配，本田靠離合器切換。</p>
+    <p class="cap">本田 e:HEV 走另一條路：兩顆馬達，一顆發電、一顆推車，沒有傳統變速箱。大約時速 40 公里以下是純電，大部分時間是引擎發電、馬達推車，也就是串聯式。</p>
+    <p class="cap">只有高速巡航，大約時速 85 公里以上、引擎效率最好的時候，離合器才接合，引擎直接推輪子，深灰色的線這時才碰到輪子。所以豐田靠齒輪分配，本田靠離合器切換。</p>
   </div>
-  <p class="src">車速分段為示意</p>
+  <p class="src">約略值：本田未公布切換車速，實際依車款、油門深淺和電量而變。直接推約 85 km/h 以上取自 CR-V 車主觀察（GTPlanet 論壇）；Honda 官方 e:HEV 技術說明</p>
 </section>
 
 <!-- 第 8c 幕：增程式的代價 -->
@@ -419,6 +419,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="app.js?v=1116y"></script>
+<script src="app.js?v=1116z"></script>
 </body>
 </html>
