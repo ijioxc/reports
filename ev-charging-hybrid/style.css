@@ -184,7 +184,7 @@ html.notes .caps { display: block; }
 .agenda .ak span { color: var(--e); }
 .agenda .ab.last { border-top-color: #bbb; }
 .agenda .ab.last b { color: #999; }
-.agenda .ab { border-top: 4px solid var(--e); padding-top: 1rem; }
+.agenda .ab { padding-top: 1rem; }
 .agenda .ab b { display: block; font-size: 3.4rem; line-height: 1; font-weight: 900; color: var(--e); }
 .agenda .ab h3 { margin: .8rem 0 .7rem; font-size: 3.6rem; font-weight: 900; line-height: 1.25; }
 .agenda .ab p { margin: 0; font-size: 1.5rem; line-height: 1.8; color: var(--mute); }
