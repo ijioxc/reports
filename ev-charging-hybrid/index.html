@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1117b">
+<link rel="stylesheet" href="style.css?v=1117c">
 </head>
 <body>
 
@@ -203,7 +203,7 @@
   </svg>
   <div class="caps">
     <p class="cap">本田 e:HEV 走另一條路：兩顆馬達，一顆發電、一顆推車，沒有傳統變速箱。時速約 40 公里以下用純電；其他大部分時間是引擎發電、馬達推車，也就是串聯式。</p>
-    <p class="cap">只有在時速約 85 公里以上的高速巡航，也就是引擎效率最好的時候，離合器才會接合，引擎直接推輪子，深灰色的線這時才碰到輪子。所以豐田靠齒輪分配，本田靠離合器切換。</p>
+    <p class="cap">只有在時速約 85 公里以上的高速巡航，也就是引擎效率最好的時候，離合器才會接合，引擎直接推輪子，深灰色的線這時才碰到輪子。</p>
   </div>
   <p class="src">約略值：本田未公布切換車速，實際依車款、油門深淺和電量而變。直接推約 85 km/h 以上取自 CR-V 車主觀察（GTPlanet 論壇）；Honda 官方 e:HEV 技術說明</p>
 </section>
@@ -242,27 +242,26 @@
 
 <!-- 第 7b 幕：豐田 vs 本田 -->
 <section class="scene" id="s7b" data-theme="ev" data-part="1" data-steps="2">
-  <p class="concl"><small>結構・豐田與本田</small>做法不同，目標一樣</p>
+  <p class="concl"><small>結構・豐田與本田</small>豐田兩條路同時走，本田兩條路二選一</p>
   <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="豐田與本田混動做法比較">
     <image href="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/toyota.svg" x="200" y="50" width="100" height="100" class="logo"/>
     <text x="250" y="210" class="c nm2">豐田 THS</text>
-    <text x="250" y="290" class="c num">齒輪分配</text>
-    <text x="250" y="330" class="c fact">行星齒輪連續調整</text>
+    <text x="250" y="290" class="c num">同時分配</text>
+    <text x="250" y="330" class="c fact">引擎一開，動力同時分給輪子和發電機</text>
     <image href="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/honda.svg" x="700" y="50" width="100" height="100" class="logo"/>
     <text x="750" y="210" class="c nm2">本田 e:HEV</text>
-    <text x="750" y="290" class="c num">離合器切換</text>
-    <text x="750" y="330" class="c fact">高速才讓引擎直接推</text>
+    <text x="750" y="290" class="c num">二選一切換</text>
+    <text x="750" y="330" class="c fact">平常只發電，高速才改成直接推</text>
     <line class="sep" x1="500" y1="70" x2="500" y2="340"/>
     <g data-s="2">
-      <text x="500" y="430" class="c b note">共同目標：讓引擎待在<tspan class="e">最有效率的轉速</tspan></text>
-      <text x="500" y="474" class="c s">2026 Prelude 再加 S+ Shift：用馬達模擬換檔手感</text>
+      <text x="500" y="450" class="c b note">共同目標：讓引擎待在<tspan class="e">最有效率的轉速</tspan></text>
     </g>
   </svg>
   <div class="caps">
-    <p class="cap">把兩家放在一起看。豐田用一組行星齒輪，連續調整引擎和輪子的轉速關係；本田用離合器，平常斷開、高速才接上。</p>
-    <p class="cap">2026 年的新款 Prelude 用第四代雙馬達系統，加上 S+ Shift，用馬達模擬換檔的感覺。豐田和本田做法不同，目標一樣：讓引擎盡量待在最有效率的轉速。</p>
+    <p class="cap">用同一個問題比兩家：引擎的動力怎麼走到輪子？豐田是兩條路同時走，行星齒輪把動力一部分直接推輪子、一部分拿去發電，比例連續調整。本田是兩條路二選一，平常引擎只發電，高速才用離合器改成直接推。</p>
+    <p class="cap">路徑不同，目標一樣：讓引擎盡量待在最有效率的轉速。</p>
   </div>
-  <p class="src">Toyota、Honda 官方技術說明；Honda News（2026 Prelude Press Kit）。Logo：Simple Icons</p>
+  <p class="src">Toyota、Honda 官方技術說明。Logo：Simple Icons</p>
 </section>
 
 <!-- 第 5b 幕：依電池大小分 -->
@@ -274,7 +273,7 @@
     <text x="40" y="206" class="nm">輕混</text><rect class="bar e3" x="200" y="178" width="14" height="40" data-g="1"/><text x="228" y="198" class="v">約 1 kWh</text><text x="228" y="224" class="s">48 V，只能輔助</text>
     <text x="40" y="294" class="nm">全混</text><rect class="bar e2" x="200" y="266" width="22" height="40" data-g="1"/><text x="236" y="286" class="v">約 1.6 kWh</text><text x="236" y="312" class="s">能用純電起步</text>
     <text x="40" y="382" class="nm">插電式</text><rect class="bar e" x="200" y="354" width="252" height="40" data-g="1" data-d=".1"/><text x="466" y="374" class="v">10–25 kWh</text><text x="466" y="400" class="s">可以插電，純電 50–100 km</text>
-    <text x="40" y="470" class="nm">增程式</text><rect class="bar e" x="200" y="442" width="560" height="40" data-g="1" data-d=".2"/><text x="774" y="462" class="v">30–45 kWh</text><text x="774" y="488" class="s">就是串聯式＋大電池</text>
+    <text x="40" y="470" class="nm">增程式</text><rect class="bar e" x="200" y="442" width="560" height="40" data-g="1" data-d=".2"/><text x="774" y="462" class="v">30–45 kWh</text><text x="774" y="488" class="s">電池最大，純電最遠</text>
   </svg>
   <div class="caps">
     <p class="cap">第二件事，電池：能用電跑多遠。電池由小到大分成五種：只有怠速熄火的微混、48 伏的輕混、能用純電起步的全混，以及可以插電的插電式和增程式，容量從不到 1 度到 40 度以上。</p>
@@ -289,23 +288,23 @@
     <text x="20" y="70" class="nm">插電式</text>
     <text x="20" y="108" class="s">全混＋大電池（10–25 kWh）＋充電孔</text>
     <text x="20" y="140" class="s">純電 50–100 km：<tspan class="e b">通勤用電</tspan>，<tspan class="b">長途用油</tspan></text>
-    <g data-s="3">
+    <g data-s="2">
       <text x="560" y="70" class="nm">增程式</text>
       <text x="560" y="108" class="s">電池更大（30–45 kWh）</text>
       <text x="560" y="140" class="s"><tspan class="b">引擎只發電、從不推輪子</tspan>＝串聯式</text>
     </g>
     <!-- 油耗：x = 260 + L × 60 -->
-    <g data-s="2">
+    <g data-s="3">
       <text x="20" y="250" class="rowt">比亞迪 DM-i 第五代：沒電時的油耗（L/100 km）</text>
       <text x="20" y="322" class="nm">一般油車</text><rect class="bar g" x="200" y="296" width="420" height="36"/><text x="632" y="322" class="v">約 7</text>
-      <text x="20" y="402" class="nm">DM-i 5.0</text><rect class="bar o" x="200" y="376" width="174" height="36" data-g="2"/><text x="386" y="402" class="v">2.9</text>
+      <text x="20" y="402" class="nm">DM-i 5.0</text><rect class="bar o" x="200" y="376" width="174" height="36" data-g="3"/><text x="386" y="402" class="v">2.9</text>
       <text x="720" y="340" class="big e">2,100 km</text><text x="720" y="380" class="s">油滿電滿綜合續航</text><text x="720" y="410" class="s">引擎熱效率 46.06%</text>
     </g>
   </svg>
   <div class="caps">
     <p class="cap">插電式混動就是全混再加大電池和充電孔：電池 10 到 25 度，純電可以跑 50 到 100 公里，日常通勤幾乎用電。</p>
-    <p class="cap">賣得最多的插電系統之一是比亞迪 DM-i，第五代引擎熱效率 46%，沒電時每 100 公里耗油 2.9 公升，一般油車大約 7 公升；油加滿、電充滿可以跑 2,100 公里。這是官方最好的數字。</p>
     <p class="cap">增程式是另一種插電：電池更大，引擎只發電、從不推輪子，在中國很流行。前面講過，只發電的話，高速時會比直接推略差。</p>
+    <p class="cap">賣得最多的插電系統之一是比亞迪 DM-i，第五代引擎熱效率 46%，沒電時每 100 公里耗油 2.9 公升，一般油車大約 7 公升；油加滿、電充滿可以跑 2,100 公里。這是官方最好的數字。</p>
   </div>
   <p class="src">CnEVPost（2024/5/28）；Wikipedia「BYD Qin L DM-i」。2.9 L 為官方虧電最佳值</p>
 </section>
@@ -417,6 +416,6 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="app.js?v=1117b"></script>
+<script src="app.js?v=1117c"></script>
 </body>
 </html>
