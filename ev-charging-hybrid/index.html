@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1116p">
+<link rel="stylesheet" href="style.css?v=1116q">
 </head>
 <body>
 
@@ -119,6 +119,43 @@
   <p class="src">電池容量為各類典型值</p>
 </section>
 
+<!-- 第 5h 幕：最早的混動車 -->
+<section class="scene" id="s5h" data-theme="ev" data-part="1" data-steps="3">
+  <p class="concl"><small>7-1 最早的混動車</small>混動 1900 年就有，1997 年才大量生產</p>
+  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="混動車年表：1900 Semper Vivus、1917 Woods Dual Power、1997 Prius">
+    <!-- x = 100 + (年 − 1900) × 8 -->
+    <line x1="60" y1="290" x2="950" y2="290" stroke="#bbb" stroke-width="3"/>
+    <g data-s="2"><rect x="270" y="270" width="580" height="40" style="fill:#e6e6e6"/><text x="560" y="297" class="s" text-anchor="middle">將近 80 年沒人量產：油便宜、電池又重又貴</text></g>
+    <g>
+      <circle cx="100" cy="290" r="13" style="fill:var(--o)"/>
+      <text x="80" y="110" class="big">1900</text>
+      <text x="80" y="160" class="nm">保時捷 Semper Vivus</text>
+      <text x="80" y="196" class="cartype">串聯式</text>
+      <text x="80" y="230" class="s">引擎帶發電機，輪轂馬達推車</text>
+    </g>
+    <g data-s="2">
+      <circle cx="236" cy="290" r="13" style="fill:var(--o)"/>
+      <text x="216" y="380" class="big">1917</text>
+      <text x="216" y="430" class="nm">Woods Dual Power</text>
+      <text x="216" y="466" class="cartype">並聯式</text>
+      <text x="216" y="500" class="s">低速用馬達，高速換引擎</text>
+    </g>
+    <g data-s="3">
+      <circle cx="876" cy="290" r="15" style="fill:var(--e)"/>
+      <text x="940" y="110" class="big e" text-anchor="end">1997</text>
+      <text x="940" y="160" class="nm" text-anchor="end">豐田 Prius</text>
+      <text x="940" y="196" class="cartype" text-anchor="end">串並聯式</text>
+      <text x="940" y="230" class="s" text-anchor="end">第一台大量生產的混動車</text>
+    </g>
+  </svg>
+  <div class="caps">
+    <p class="cap">最早的混動車比大家想的早很多。1900 年，保時捷的創辦人費迪南・保時捷設計了 Semper Vivus：引擎只帶發電機，電再送到輪子裡的輪轂馬達，就是剛剛講的串聯式，比福特 T 型車還早 8 年。</p>
+    <p class="cap">1917 年左右，美國的 Woods Dual Power 是並聯式：低速用馬達，高速換引擎。但之後將近 80 年沒有人再量產混動，因為油便宜、電池又重又貴，純油車就夠用了。</p>
+    <p class="cap">一直到 1997 年豐田 Prius 在日本上市，才是第一台大量生產的混動車，用的是串並聯式。所以三種架構一百年前都有人做過，缺的是好電池和電腦控制。</p>
+  </div>
+  <p class="src">Hagerty〈10 Hybrids That Helped Pave the Road to Popularity〉；The Drive〈The Real Story Behind the World's First Hybrid Car〉；Zwischengas（Woods Dual Power，年份各來源為 1915–1917）</p>
+</section>
+
 <!-- 第 5c 幕：混動為什麼省油 -->
 <section class="scene" id="s5c" data-theme="ev" data-part="1" data-steps="2">
   <p class="concl"><small>7-1 混動為什麼省油</small>走走停停的市區，混動省最多</p>
@@ -136,7 +173,7 @@
     <text x="760" y="408" class="big" data-s="2">省 1 成</text>
   </svg>
   <div class="caps">
-    <p class="cap">分類講完，先回答一個最基本的問題：混動為什麼省油？三招：停車時引擎熄火、煞車時馬達反過來發電把能量收回電池、引擎盡量待在最省油的轉速。拿同一台豐田 Corolla 來比，灰色是汽油版。</p>
+    <p class="cap">歷史講完，先回答一個最基本的問題：混動為什麼省油？三招：停車時引擎熄火、煞車時馬達反過來發電把能量收回電池、引擎盡量待在最省油的轉速。拿同一台豐田 Corolla 來比，灰色是汽油版。</p>
     <p class="cap">換成油電版，市區從 7.4 降到 4.4 公升，省四成；高速只從 5.7 降到 5.1，省一成。因為這三招都發生在走走停停的時候，高速一直巡航，就沒什麼好回收的。</p>
   </div>
   <p class="src">美國 EPA 油耗標示（fueleconomy.gov），2026 Corolla LE 汽油 32/41 mpg、Hybrid LE 53/46 mpg，換算成 L/100 km</p>
@@ -376,6 +413,7 @@
 <footer class="refs">
   <h2>參考資料</h2>
   <ol>
+    <li>Hagerty：10 Hybrids That Helped Pave the Road to Popularity。The Drive：The Real Story Behind the World's First Hybrid Car。Zwischengas：Woods Dual Power from 1917。</li>
     <li>美國 EPA：fueleconomy.gov，2026 Toyota Corolla LE／Corolla Hybrid LE 油耗標示。</li>
     <li>CnEVPost：BYD launches 5th-gen DM tech（2024/5/28）。Wikipedia：BYD Qin L DM-i。</li>
     <li>Toyota USA Newsroom：2026 RAV4。Honda News：2026 Honda Prelude Press Kit。TVBS 車勢、U-CAR：台灣 RAV4 上市與 RAV4 PHEV（2026/1、2026/6）。</li>
@@ -386,6 +424,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="app.js?v=1116p"></script>
+<script src="app.js?v=1116q"></script>
 </body>
 </html>
