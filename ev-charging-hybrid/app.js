@@ -108,7 +108,6 @@ function applyStop(p) {
     root.dataset.part = p.part;
     document.querySelectorAll('#progress li').forEach(li => li.classList.toggle('on', li.dataset.part === p.part));
   }
-  document.getElementById('pageno').textContent = `${p.no} / ${TOTAL}`;
 }
 
 const scrollPos = {y: 0};

@@ -28,7 +28,6 @@ b, strong { font-weight: 900; }
 /* 2026 新車 */
 .viz .cartype { fill: var(--e); font-weight: 900; font-size: 20px; }
 .viz .fact { fill: var(--mute); font-size: 20px; }
-#pageno { position: fixed; right: 1.6rem; bottom: 2.4rem; z-index: 20; font-size: .6rem; font-variant-numeric: tabular-nums; color: #999; }
 #keyhint { position: fixed; right: 4.5rem; bottom: 2.4rem; z-index: 20; font-size: .55rem; color: #999; opacity: 0; transition: opacity .3s; }
 #keyhint:hover { opacity: .9; }
 
