@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1116x">
+<link rel="stylesheet" href="style.css?v=1116y">
 </head>
 <body>
 
@@ -209,26 +209,36 @@
 </section>
 
 <!-- 第 8c 幕：增程式的代價 -->
-<section class="scene" id="s8c" data-theme="ev" data-part="1" data-steps="2">
-  <p class="concl"><small>結構・先發電的代價</small>油先變電再推車，高速會多損失一截</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="引擎直接推輪子和先發電再推輪子的效率比較">
-    <g class="key" transform="translate(-300,0)"><line x1="700" y1="22" x2="740" y2="22" class="o"/><text x="748" y="29">引擎（機械）</text><line x1="900" y1="22" x2="940" y2="22" class="eL"/><text x="948" y="29">電</text></g>
-    <text x="20" y="110" class="nm">直接推</text>
-    <text x="180" y="110" class="s">引擎</text><line class="o" x1="240" y1="102" x2="420" y2="102"/><text x="440" y="110" class="s">齒輪</text><line class="o" x1="500" y1="102" x2="680" y2="102"/><text x="700" y="110" class="s">輪子</text>
-    <text x="20" y="200" class="nm">先發電</text>
-    <text x="180" y="200" class="s">引擎</text><line class="o" x1="240" y1="192" x2="300" y2="192"/><text x="310" y="200" class="s">發電機</text><line class="eL" x1="390" y1="192" x2="450" y2="192"/><text x="460" y="200" class="s">逆變器</text><line class="eL" x1="540" y1="192" x2="600" y2="192"/><text x="610" y="200" class="s">馬達</text><line class="eL" x1="666" y1="192" x2="690" y2="192"/><text x="700" y="200" class="s">輪子</text>
+<section class="scene" id="s8c" data-theme="ev" data-part="1" data-steps="3">
+  <p class="concl"><small>結構・先發電的代價</small>低速先發電比較省，高速直接推比較省</p>
+  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="引擎直接推輪子和先發電再推輪子，在低速和高速的整體效率比較">
+    <g class="key" transform="translate(-300,0)"><line x1="700" y1="22" x2="740" y2="22" class="o"/><text x="748" y="29">機械</text><line x1="840" y1="22" x2="880" y2="22" class="eL"/><text x="888" y="29">電</text></g>
+    <text x="20" y="82" class="nm">直接推</text>
+    <text x="170" y="82" class="s">引擎</text><line class="o" x1="230" y1="74" x2="430" y2="74"/><text x="448" y="82" class="s">齒輪</text><line class="o" x1="510" y1="74" x2="830" y2="74"/><text x="846" y="82" class="s">輪子</text>
+    <text x="910" y="82" class="v">95%</text>
+    <text x="20" y="136" class="nm">先發電</text>
+    <text x="170" y="136" class="s">引擎</text><line class="o" x1="230" y1="128" x2="280" y2="128"/><text x="292" y="136" class="s">發電機</text><line class="eL" x1="370" y1="128" x2="420" y2="128"/><text x="432" y="136" class="s">電控 PCU</text><line class="eL" x1="546" y1="128" x2="596" y2="128"/><text x="608" y="136" class="s">馬達</text><line class="o" x1="666" y1="128" x2="830" y2="128"/><text x="846" y="136" class="s">輪子</text>
+    <text x="910" y="136" class="v e">85%</text>
+    <text x="170" y="176" class="s">數字＝引擎輸出有幾成送到輪子。先發電多過三關，少一成。</text>
+
+    <!-- 整體效率＝引擎效率 × 傳動效率；width = % × 14 -->
     <g data-s="2">
-      <text x="20" y="300" class="rowt">引擎輸出有幾成送到輪子（示意估算）</text>
-      <!-- width = % × 6 -->
-      <text x="20" y="372" class="nm">直接推</text><rect class="bar o" x="180" y="346" width="570" height="40" data-g="2"/><text x="762" y="374" class="v">約 95%</text>
-      <text x="20" y="452" class="nm">先發電</text><rect class="bar e" x="180" y="426" width="510" height="40" data-g="2" data-d=".1"/><text x="702" y="454" class="v e">約 85%</text>
+      <text x="20" y="232" class="rowt">低速：引擎直接推，只能跟著車速低轉</text>
+      <text x="20" y="278" class="nm">直接推</text><rect class="bar o" x="170" y="254" width="266" height="32" data-g="2"/><text x="448" y="278" class="v">19%</text><text x="520" y="278" class="s">引擎 20% × 95%</text>
+      <text x="20" y="322" class="nm">先發電</text><rect class="bar e" x="170" y="298" width="476" height="32" data-g="2" data-d=".1"/><text x="658" y="322" class="v e">34%</text><text x="730" y="322" class="s">引擎 40% × 85%</text>
+    </g>
+    <g data-s="3">
+      <text x="20" y="386" class="rowt">高速：引擎本來就在好的轉速</text>
+      <text x="20" y="432" class="nm">直接推</text><rect class="bar o" x="170" y="408" width="498" height="32" data-g="3"/><text x="680" y="432" class="v">35.5%</text><text x="770" y="432" class="s">引擎 37% × 95%</text>
+      <text x="20" y="476" class="nm">先發電</text><rect class="bar e" x="170" y="452" width="476" height="32" data-g="3" data-d=".1"/><text x="658" y="476" class="v e">34%</text><text x="730" y="476" class="s">引擎 40% × 85%</text>
     </g>
   </svg>
   <div class="caps">
-    <p class="cap">為什麼本田高速要接離合器？因為先發電有代價。引擎直接推輪子，中間只隔一組齒輪；串聯式要先發電，經過發電機、逆變器、馬達三關，每一關都會損失一點。</p>
-    <p class="cap">粗估下來，直接推大約 95% 送到輪子，先發電大約 85%，多損失一成。所以結構的選擇其實是取捨：低速讓引擎只發電，高速讓引擎直接推輪子比較省。</p>
+    <p class="cap">為什麼本田高速要接離合器？先看兩條路。引擎直接推輪子，中間只隔一組齒輪，大約 95% 送到輪子；先發電的話，要經過發電機、電控 PCU、馬達三關，大約剩 85%，少一成。</p>
+    <p class="cap">但只看這一成不公平，還要乘上引擎本身的效率。低速時直接推，引擎只能跟著車速低轉，效率可能只有兩成，整體 19%；先發電可以讓引擎待在最佳轉速 40%，扣掉一成損失還有 34%，先發電贏很多。</p>
+    <p class="cap">高速時引擎本來就轉在好的區間，直接推大約 37% 乘 95%，35.5%；先發電還是 34%。差距不大，但直接推贏。所以結構的選擇是取捨：低速讓引擎只發電，高速讓引擎直接推輪子。</p>
   </div>
-  <p class="src">效率為各元件典型值相乘的示意估算（發電機、逆變器、馬達各約 95%），非實測</p>
+  <p class="src">示意估算，非實測：傳動效率取發電機、電控（兩次轉換）、馬達各約 95%；引擎效率取低速約 20%、最佳點約 40%（本田 e:HEV 引擎最高熱效率約 40%）、高速巡航約 37%</p>
 </section>
 
 <!-- 第 7b 幕：豐田 vs 本田 -->
@@ -409,6 +419,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="app.js?v=1116x"></script>
+<script src="app.js?v=1116y"></script>
 </body>
 </html>
