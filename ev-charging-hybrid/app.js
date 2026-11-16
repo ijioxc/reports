@@ -23,18 +23,6 @@ function growBars(el, tl, at) {
   });
 }
 
-// ───── 第 4 幕：台灣充電樁圓餅（快充 4,188／慢充 12,092），第 ③ 步轉出來
-const TW = {a: {a: 1}};   // 一進來就畫滿
-function drawTwPie() {
-  if (!window.d3) return;
-  const end = 2 * Math.PI * TW.a.a, f = 4188 / 16280;
-  const arc = d3.arc().innerRadius(100).outerRadius(160);
-  d3.select('#twpie').selectAll('path').data([[0, f], [f, 1]]).join('path')
-    .attr('d', ([s, e]) => arc({startAngle: Math.min(end, 2 * Math.PI * s), endAngle: Math.min(end, 2 * Math.PI * e)}))
-    .attr('fill', (d, i) => i ? BLUE3 : BLUE);
-}
-drawTwPie();
-
 // ───── 第 6 幕：列線圖。三個軸 x：MG1 620、引擎 836（＝78/108 的位置）、輪子 920；轉速 1 ＝ 55 px
 // 太陽 30 齒、環 78 齒：30·Ns + 78·Nr = 108·Nc。三個頂點永遠在一直線上。
 const NOMO = {Z0: 270, K: 55, st: {c: 0, r: 0}};

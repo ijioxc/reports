@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>充電與混動</title>
-<meta name="description" content="電動車科技第六、七章：電動車充電系統、混合動力車的基本原理（滾動式網頁版）">
+<title>混合動力車</title>
+<meta name="description" content="電動車科技第七章：混合動力車的基本原理與 2026 新車（滾動式網頁版）">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1116l">
+<link rel="stylesheet" href="style.css?v=1116h">
 </head>
 <body>
 
 <ol id="progress" aria-label="報告進度">
-  <li data-part="0">開場</li><li data-part="1">充電規格</li><li data-part="2">充電設備</li><li data-part="3">混動原理</li><li data-part="4">2026 新車</li><li data-part="5">結論</li>
+  <li data-part="0">開場</li><li data-part="1">分類</li><li data-part="2">豐田與本田</li><li data-part="3">插電與增程</li><li data-part="4">2026 新車</li><li data-part="5">結論</li>
 </ol>
 <div id="pageno" aria-hidden="true"></div>
 <div id="keyhint" aria-hidden="true">滾輪或 → 前進｜← 退回｜N 講者模式</div>
@@ -32,265 +32,27 @@
 <section class="scene" id="cover" data-theme="ev" data-part="0" data-steps="2">
   <div class="cols">
     <div class="col l">
-      <p class="q" data-s="2"><b>電動車</b><br>插頭會統一嗎？</p>
-      <p class="qn" data-s="2">第六章　電動車充電系統</p>
+      <p class="q" data-s="2"><b>問題</b><br>混動車的引擎<br>還在做什麼？</p>
     </div>
     <div class="col r">
-      <p class="q" data-s="2"><b>混動車</b><br>引擎還在做什麼？</p>
-      <p class="qn" data-s="2">第七章　混合動力車的基本原理</p>
+      <p class="q" data-s="2"><b>答案</b><br>從推輪子<br>變成發電機</p>
     </div>
   </div>
   <div class="title" data-out="2">
-    <p class="kick">電動車科技　第六、七章</p>
-    <h1><span class="e">充電</span>與<span class="h">混動</span></h1>
-    <p class="sub">插頭在統一，引擎在讓位</p>
+    <p class="kick">電動車科技　第七章</p>
+    <h1>混合<span class="e">動力</span>車</h1>
+    <p class="sub">引擎在讓位</p>
     <p class="by">第三組　授課教授　龐大成　｜　2026 年 11 月</p>
     <p class="team">楊政穎　c113183206　張天翰　c112142235　張翊詮　c113142234　蔡博彥　c113142225</p>
   </div>
   <div class="caps">
-    <p class="cap">大家好，我們是第三組，今天報告第六章電動車充電系統、第七章混合動力車的基本原理，資料整理到 11 月 16 日。</p>
-    <p class="cap">這兩章其實在回答兩個問題：電動車的插頭會統一嗎？混動車的引擎還在做什麼？我的答案先講：插頭在統一，引擎在讓位。</p>
+    <p class="cap">大家好，我們是第三組，今天報告第七章混合動力車的基本原理，再加上 2026 年的新車，資料整理到 11 月 16 日。</p>
+    <p class="cap">整份報告只回答一個問題：混動車的引擎還在做什麼？答案先講：引擎在讓位，從推輪子，慢慢變成發電機。</p>
   </div>
-</section>
-
-<!-- 第 1 幕：五大充電規格 -->
-<section class="scene" id="s1" data-theme="ev" data-part="1" data-steps="4">
-  <p class="concl"><small>6-1 全球五大充電規格</small>插頭跟著地區走，北美正全面換成 NACS</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="五種快充插頭正面示意：CCS1、CCS2、CHAdeMO、GB/T、NACS">
-    <g class="plug">
-      <!-- CCS1：上 Type 1，下兩根直流 -->
-      <circle cx="100" cy="160" r="58"/>
-      <circle class="pin" cx="80" cy="142" r="10"/><circle class="pin" cx="120" cy="142" r="10"/><circle class="pin" cx="100" cy="190" r="12"/><circle class="pin" cx="74" cy="176" r="5"/><circle class="pin" cx="126" cy="176" r="5"/>
-      <rect x="55" y="228" width="90" height="52" rx="24"/>
-      <circle class="pin" cx="78" cy="254" r="13"/><circle class="pin" cx="122" cy="254" r="13"/>
-      <!-- CCS2：上 Type 2（平頂），下兩根直流 -->
-      <path d="M246,135 H354 A62,62 0 1 1 246,135 Z"/>
-      <circle class="pin" cx="284" cy="150" r="6"/><circle class="pin" cx="316" cy="150" r="6"/><circle class="pin" cx="266" cy="176" r="9"/><circle class="pin" cx="300" cy="176" r="9"/><circle class="pin" cx="334" cy="176" r="9"/><circle class="pin" cx="282" cy="204" r="9"/><circle class="pin" cx="318" cy="204" r="9"/>
-      <rect x="255" y="238" width="90" height="52" rx="24"/>
-      <circle class="pin" cx="278" cy="264" r="13"/><circle class="pin" cx="322" cy="264" r="13"/>
-      <!-- CHAdeMO -->
-      <circle cx="500" cy="200" r="76"/><circle cx="500" cy="200" r="60" class="ring"/>
-      <circle class="pin" cx="474" cy="200" r="15"/><circle class="pin" cx="526" cy="200" r="15"/>
-      <circle class="pin" cx="500" cy="160" r="5"/><circle class="pin" cx="476" cy="168" r="5"/><circle class="pin" cx="524" cy="168" r="5"/><circle class="pin" cx="500" cy="240" r="5"/><circle class="pin" cx="476" cy="232" r="5"/><circle class="pin" cx="524" cy="232" r="5"/><circle class="pin" cx="500" cy="200" r="5"/>
-      <!-- GB/T 直流 -->
-      <circle cx="700" cy="200" r="70"/>
-      <circle class="pin" cx="672" cy="178" r="15"/><circle class="pin" cx="728" cy="178" r="15"/><circle class="pin" cx="700" cy="214" r="11"/>
-      <circle class="pin" cx="664" cy="226" r="5"/><circle class="pin" cx="736" cy="226" r="5"/><circle class="pin" cx="682" cy="246" r="5"/><circle class="pin" cx="718" cy="246" r="5"/><circle class="pin" cx="700" cy="160" r="5"/>
-      <!-- NACS：一個插頭交直流共用 -->
-      <path d="M900,128 C948,128 960,168 954,204 C947,246 926,268 900,268 C874,268 853,246 846,204 C840,168 852,128 900,128 Z"/>
-      <circle class="pin" cx="882" cy="214" r="14"/><circle class="pin" cx="918" cy="214" r="14"/><circle class="pin" cx="884" cy="166" r="6"/><circle class="pin" cx="916" cy="166" r="6"/><circle class="pin" cx="900" cy="246" r="7"/>
-    </g>
-    <!-- ② 直流針變藍 -->
-    <g class="dc" data-s="2">
-      <circle cx="78" cy="254" r="13"/><circle cx="122" cy="254" r="13"/>
-      <circle cx="278" cy="264" r="13"/><circle cx="322" cy="264" r="13"/>
-      <circle cx="474" cy="200" r="15"/><circle cx="526" cy="200" r="15"/>
-      <circle cx="672" cy="178" r="15"/><circle cx="728" cy="178" r="15"/>
-      <circle cx="882" cy="214" r="14"/><circle cx="918" cy="214" r="14"/>
-    </g>
-    <g class="lab">
-      <text x="100" y="330" class="nm">CCS1</text><text x="100" y="358">北美・台灣・韓國</text>
-      <text x="300" y="330" class="nm">CCS2</text><text x="300" y="358">歐洲・澳洲</text>
-      <text x="500" y="330" class="nm">CHAdeMO</text><text x="500" y="358">日本</text>
-      <text x="700" y="330" class="nm">GB/T</text><text x="700" y="358">中國</text>
-      <text x="900" y="330" class="nm">NACS</text><text x="900" y="358">特斯拉 → 北美</text>
-    </g>
-    <text class="note" x="500" y="440" text-anchor="middle" data-s="2" data-out="3"><tspan class="b">藍色＝直流快充針。</tspan>CCS 的 C 是 Combo：慢充插頭下面加兩根直流針</text>
-    <text class="s" x="500" y="480" text-anchor="middle" data-s="2" data-out="3">CHAdeMO、GB/T 的快充是另一個插座；NACS 一個小插頭交直流共用</text>
-    <!-- ③ NACS 一統北美 -->
-    <g data-s="3" data-out="4">
-      <text class="note" x="60" y="418"><tspan class="b">北美主要車廠全部承諾改用 NACS</tspan>（2023 年成為 SAE J3400 標準，約 2027 年成為預設）</text>
-      <rect class="track" x="60" y="432" width="880" height="28" rx="4"/>
-      <rect class="bar e" x="60" y="432" width="880" height="28" rx="4" data-g="3"/>
-      <text x="930" y="453" text-anchor="end" class="inbar">100%</text>
-      <text class="note" x="60" y="500">特斯拉超充：全球 9,007 站、8.5 萬槍以上（2026/10/1）</text>
-    </g>
-    <!-- ④ 台灣 -->
-    <g data-s="4">
-      <g class="tag"><rect x="45" y="70" width="110" height="34" rx="17"/><text x="100" y="94">台灣主流</text></g>
-      <g class="tag"><rect x="235" y="70" width="130" height="34" rx="17"/><text x="300" y="94">台灣特斯拉</text></g>
-      <g class="tag lt"><rect x="445" y="70" width="110" height="34" rx="17"/><text x="500" y="94">少數日系</text></g>
-      <g class="tag"><rect x="835" y="70" width="130" height="34" rx="17"/><text x="900" y="94">台灣超充站</text></g>
-      <text class="note" x="500" y="444" text-anchor="middle"><tspan class="b">台灣一個地方就混了 4 種</tspan></text>
-      <text class="s" x="500" y="484" text-anchor="middle">慢充 J1772・快充 CCS1・少數日系 CHAdeMO・特斯拉 2021/7 起改 CCS2</text>
-    </g>
-  </svg>
-  <div class="caps">
-    <p class="cap">全世界主要有五種快充插頭，基本上跟著地區走：北美和台灣用 CCS1、歐洲用 CCS2、日本用 CHAdeMO、中國用 GB/T，還有特斯拉自己的 NACS。</p>
-    <p class="cap">CCS 的 C 是 Combo：上面是原本的交流慢充插頭，下面多兩根大的直流針，一個插座慢充、快充都能用。CHAdeMO 和 GB/T 則是快充另外一個插座。</p>
-    <p class="cap">變化最大的是北美。特斯拉 2022 年公開插頭規格，2023 年變成 SAE J3400 標準。到 2026 年，北美主要車廠全部承諾改用，預計 2027 年左右成為預設。特斯拉超充站 10 月初全球 9,007 站、超過 8.5 萬槍。</p>
-    <p class="cap">台灣呢？慢充用 J1772，也就是 Type 1；快充以 CCS1 為主，少數日系車用 CHAdeMO。特斯拉 2021 年 7 月後在台灣改成 CCS2，超充站同時有兩種槍。台灣是五種裡混最多的地方。</p>
-  </div>
-  <p class="src">示意圖，非實際尺寸。Wikipedia「North American Charging Standard」「Tesla Supercharger」；J3400 Market Development Update（reginfo.gov）；TVBS 車勢；automorphsw.com</p>
-</section>
-
-<!-- 第 2 幕：充電模式 -->
-<section class="scene" id="s2" data-theme="ev" data-part="1" data-steps="4">
-  <p class="concl"><small>6-2 充電之主要模式</small>功率越大，保護和通訊就要越多</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="IEC 61851 四種充電模式的功率比較">
-    <!-- 刻度：x = 300 + log10(kW) × 220 -->
-    <g class="axis">
-      <line x1="300" y1="60" x2="300" y2="380"/><line x1="520" y1="60" x2="520" y2="380"/><line x1="740" y1="60" x2="740" y2="380"/><line x1="960" y1="60" x2="960" y2="380"/>
-      <text x="300" y="404">1 kW</text><text x="520" y="404">10</text><text x="740" y="404">100</text><text x="960" y="404">1,000</text>
-    </g>
-    <text x="20" y="40" class="rowt">充電模式</text>
-    <g class="mrow"><text x="20" y="116" class="nm"><tspan class="e">1</tspan>　家用插座</text>
-      <rect class="bar e3" x="300" y="86" width="66" height="40" data-g="1"/><text x="378" y="114" class="v">約 2 kW</text></g>
-    <g class="mrow" data-s="2"><text x="20" y="196" class="nm"><tspan class="e">2</tspan>　隨車充電線</text>
-      <rect class="bar e3" x="300" y="166" width="105" height="40" data-g="2"/><text x="417" y="194" class="v">約 3 kW</text></g>
-    <g class="mrow" data-s="2"><text x="20" y="276" class="nm"><tspan class="e">3</tspan>　交流充電樁</text>
-      <rect class="bar e2" x="300" y="246" width="295" height="40" data-g="2" data-d=".15"/><text x="607" y="274" class="v">7–22 kW</text></g>
-    <g class="mrow" data-s="3"><text x="20" y="356" class="nm"><tspan class="e">4</tspan>　直流快充</text>
-      <rect class="bar e" x="300" y="326" width="560" height="40" data-g="3"/>
-      <rect class="bar e ext" x="860" y="326" width="100" height="40" data-g="3" data-d=".25"/>
-      <text x="580" y="354" class="v in">50–350 kW</text><text x="910" y="354" class="v in">1,000</text></g>
-    <g data-s="4">
-      <g class="card"><rect x="60" y="436" width="420" height="80" rx="10"/><text x="84" y="470" class="nm">換電</text><text x="84" y="500">Gogoro、蔚來：直接換一顆滿電電池</text></g>
-      <g class="card"><rect x="520" y="436" width="420" height="80" rx="10"/><text x="544" y="470" class="nm">無線充電</text><text x="544" y="500">SAE J2954，最高 11 kW</text></g>
-    </g>
-  </svg>
-  <div class="caps">
-    <p class="cap">國際標準 IEC 61851 把充電分成四種模式。模式 1 直接插家用插座，沒有任何保護，很多國家已經禁止。</p>
-    <p class="cap">模式 2 是隨車充電線，線上有一個控制盒負責漏電保護；模式 3 是牆上的交流充電樁，7 到 22 kW，樁和車會互相通訊，確認接好了才送電。</p>
-    <p class="cap">模式 4 是直流快充，50 到 350 kW，現在已經往 1,000 kW 走。這張圖是對數刻度，每一格差十倍。用 60 度電的電池算：插座要充一天多，快充大約半小時到八成。</p>
-    <p class="cap">另外兩種補能方式：換電，像台灣的 Gogoro、中國的蔚來；還有無線充電，SAE J2954 標準最高 11 kW。</p>
-  </div>
-  <p class="src">IEC 61851-1；SAE J2954</p>
-</section>
-
-<!-- 第 3 幕：充電樁設備 -->
-<section class="scene" id="s3" data-theme="ev" data-part="2" data-steps="2">
-  <p class="concl"><small>6-3 充電樁設備與規格</small>慢充把整流器放車上，快充把整流器搬進樁裡</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="交流樁與直流樁的電路方塊圖">
-    <defs>
-      <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#8a8a8a"/></marker>
-      <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#1F5FE0"/></marker>
-    </defs>
-    <g transform="translate(0,30)">
-    <!-- 交流樁 -->
-    <g class="flow">
-      <text x="20" y="52" class="rowt">交流樁（慢充）</text>
-      <rect class="blk g" x="20" y="70" width="110" height="80" rx="8"/><text x="75" y="117" class="c">電網 AC</text>
-      <line class="ac" x1="130" y1="110" x2="186" y2="110" marker-end="url(#ah)"/>
-      <rect class="blk" x="190" y="70" width="250" height="80" rx="8"/><text x="315" y="104" class="c b">交流樁</text><text x="315" y="132" class="c s">漏電保護・CP 通訊</text>
-      <line class="ac" x1="440" y1="110" x2="496" y2="110" marker-end="url(#ah)"/>
-      <rect class="car" x="500" y="56" width="400" height="108" rx="14"/><text x="512" y="80" class="s">車上</text>
-      <rect class="blk rect" x="530" y="86" width="150" height="64" rx="8"/><text x="605" y="116" class="c w b">OBC 整流</text><text x="605" y="138" class="c w s">7–11 kW</text>
-      <line class="dcl" x1="680" y1="118" x2="736" y2="118" marker-end="url(#ab)"/>
-      <rect class="blk bat" x="740" y="86" width="140" height="64" rx="8"/><text x="810" y="124" class="c w b">電池</text>
-    </g>
-    <!-- 直流樁 -->
-    <g class="flow" data-s="2" transform="translate(0,70)">
-      <text x="20" y="232" class="rowt">直流樁（快充）</text>
-      <rect class="blk g" x="20" y="250" width="110" height="80" rx="8"/><text x="75" y="297" class="c">電網 AC</text>
-      <line class="ac" x1="130" y1="290" x2="186" y2="290" marker-end="url(#ah)"/>
-      <rect class="blk" x="190" y="250" width="250" height="80" rx="8"/>
-      <rect class="blk rect" x="200" y="258" width="150" height="64" rx="8"/><text x="275" y="288" class="c w b">整流模組</text><text x="275" y="310" class="c w s">AC → DC</text>
-      <text x="395" y="286" class="c s">液冷</text><text x="395" y="308" class="c s">槍線</text>
-      <path class="dcl" d="M440,290 H560 V340 H760 V318" marker-end="url(#ab)"/>
-      <rect class="car" x="500" y="236" width="400" height="108" rx="14"/><text x="512" y="260" class="s">車上</text>
-      <rect class="blk off" x="530" y="266" width="150" height="50" rx="8"/><text x="605" y="297" class="c s">OBC（不用）</text>
-      <rect class="blk bat" x="740" y="266" width="140" height="50" rx="8"/><text x="810" y="298" class="c w b">電池</text>
-      <text x="660" y="372" class="c s e">直流直接進電池，繞過 OBC</text>
-    </g>
-    <!-- 右邊：功率比較 -->
-    <g data-s="2" transform="translate(0,70)">
-      <line class="base" x1="915" y1="340" x2="995" y2="340"/>
-      <rect class="bar e3" x="925" y="331" width="26" height="9" data-g="2" data-o="b"/><text x="938" y="322" class="c s">11</text>
-      <rect class="bar e" x="959" y="62" width="26" height="278" data-g="2" data-o="b" data-d=".15"/><text x="972" y="54" class="c s">350</text>
-      <text x="955" y="364" class="c s">kW</text>
-    </g>
-    </g>
-  </svg>
-  <div class="caps">
-    <p class="cap">電池只吃直流電，電網給的是交流電，所以一定要有人整流。交流樁其實很簡單：電錶、漏電保護、繼電器，加上一條通訊線 CP，真正整流的是車上的車載充電機 OBC。OBC 塞在車裡，大小有限，所以交流慢充多半只有 7 到 11 kW。</p>
-    <p class="cap">直流快充把整流模組整個搬進樁裡，直接把直流電送進電池，繞過 OBC。整流器放在樁裡可以做很大，功率才能上到 350 kW；電流太大，槍線還要用液體冷卻。</p>
-  </div>
-  <p class="src">IEC 61851；台灣國道：中央社（2026/9/15）引交通部資料</p>
-</section>
-
-<!-- 第 3b 幕：充電樁規格 -->
-<section class="scene" id="s3b" data-theme="ev" data-part="2" data-steps="1">
-  <p class="concl"><small>6-3 充電樁規格</small>交流看電壓電流，直流看功率</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="交流與直流充電樁規格">
-    <text x="125" y="170" class="c nm">交流單相</text><text x="125" y="230" class="c s">220 V × 32 A</text>
-    <text x="125" y="310" class="c num">≈ 7 kW</text><text x="125" y="350" class="c s">家用、社區</text>
-    <text x="375" y="170" class="c nm">交流三相</text><text x="375" y="230" class="c s">380 V × 32 A</text>
-    <text x="375" y="310" class="c num">≈ 22 kW</text><text x="375" y="350" class="c s">商場、停車場</text>
-    <text x="625" y="170" class="c nm">直流快充</text><text x="625" y="230" class="c s">200–1,000 V</text>
-    <text x="625" y="310" class="c num">50–360 kW</text><text x="625" y="350" class="c s">液冷槍線</text>
-    <text x="875" y="170" class="c nm">台灣國道</text><text x="875" y="230" class="c s">全部 200 kW 以上</text>
-    <text x="875" y="310" class="c num">約 7 成</text><text x="875" y="350" class="c s">是 350、360 kW</text>
-  </svg>
-  <div class="caps">
-    <p class="cap">規格整理：交流單相 220 伏、32 安培，大約 7 kW；三相可到 22 kW。直流 200 到 1,000 伏，50 到 360 kW。台灣國道服務區的快充全部 200 kW 以上，約七成是 350、360 kW。</p>
-  </div>
-  <p class="src">IEC 61851；台灣國道：中央社（2026/9/15）引交通部資料</p>
-</section>
-
-<!-- 第 4 幕：兆瓦閃充 -->
-<section class="scene" id="s4" data-theme="ev" data-part="2" data-steps="3">
-  <p class="concl"><small>6-3 2026 最新：兆瓦閃充</small>快充正在從 350 kW 走向 1,000 kW</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="一般快充 350 kW 與比亞迪閃充 1,000 kW 比較">
-    <!-- x = 250 + kW × 0.6 -->
-    <text x="20" y="152" class="nm">一般快充</text>
-    <rect class="bar g" x="250" y="122" width="210" height="44"/><text x="472" y="153" class="v">350 kW</text>
-    <g data-s="2">
-      <text x="20" y="252" class="nm e">比亞迪閃充</text>
-      <rect class="bar e" x="250" y="222" width="600" height="44" data-g="2"/><text x="838" y="253" class="v" text-anchor="end" style="fill:#fff">1,000 kW</text>
-      <text x="250" y="312" class="s">1,000 V × 1,000 A，充 5 分鐘約跑 400 km（2025/3 發表）</text>
-    </g>
-    <g data-s="3">
-      <text x="250" y="420" class="nm e">歐洲：2026 年底目標約 3,000 站</text>
-      <text x="250" y="456" class="s">開放其他品牌；這是目標，實際站數還沒公布</text>
-    </g>
-  </svg>
-  <div class="caps">
-    <p class="cap">2026 年充電最大的新聞是兆瓦級快充。先看基準：現在主流的直流快充大約 350 kW。</p>
-    <p class="cap">比亞迪 2025 年 3 月發表超級 e 平台，1,000 伏乘 1,000 安培，等於 1,000 kW，充 5 分鐘跑 400 公里，是一般快充的將近三倍。</p>
-    <p class="cap">比亞迪 2026 年開始大規模蓋閃充站，目標年底前在歐洲蓋約 3,000 站，而且開放給其他品牌。這是目標，實際蓋了多少還要看。</p>
-  </div>
-  <p class="src">CnEVPost（2026/2/24）；Carscoops（2026/4）；electrive。報告前一天要再查</p>
-</section>
-
-<!-- 第 4b 幕：台灣充電樁數量 -->
-<section class="scene" id="s4b" data-theme="ev" data-part="2" data-steps="1">
-  <p class="concl"><small>6-3 台灣現況（1）</small>台灣公共充電樁 1.6 萬槍，四分之一是快充</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="台灣公共充電樁數量：快充與慢充">
-    <g transform="translate(340,280)"><g id="twpie"></g>
-      <text y="4" class="c big" style="font-size:40px">16,280</text><text y="40" class="c s">槍（2026/7 底）</text></g>
-    <text x="560" y="230" class="nm e">快充 4,188</text><text x="560" y="262" class="s">約 26%</text>
-    <text x="560" y="340" class="nm" style="fill:#7d93c4">慢充 12,092</text><text x="560" y="372" class="s">約 74%</text>
-    <text x="340" y="510" class="c s">同期電動小客車登記 14.9 萬輛</text>
-  </svg>
-  <div class="caps">
-    <p class="cap">台灣到今年 7 月底，公共充電樁 16,280 槍，其中快充 4,188 槍，大約四分之一；同期電動小客車登記 14.9 萬輛。</p>
-  </div>
-  <p class="src">中央社（2026/9/15）、TVBS 車勢（交通部，截至 2026/7 底）。報告前一天要再查</p>
-</section>
-
-<!-- 第 4c 幕：車樁比 -->
-<section class="scene" id="s4c" data-theme="ev" data-part="2" data-steps="2">
-  <p class="concl"><small>6-3 台灣現況（2）</small>台灣的車樁比，已經比歐盟建議值好</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="台灣與歐盟建議的車樁比">
-    <text x="20" y="60" class="s">車樁比＝幾台車分一槍，<tspan class="b">越小越好</tspan></text>
-    <!-- x = 160 + 比值 × 7.5 -->
-    <text x="20" y="182" class="nm">整體</text>
-    <rect class="bar g" x="160" y="150" width="75" height="40"/><text x="247" y="178" class="v">歐盟建議 10</text>
-    <rect class="bar e" x="160" y="200" width="69" height="40" data-g="2"/><text x="241" y="228" class="v e" data-s="2">台灣 9.2</text>
-    <text x="20" y="372" class="nm">快充</text>
-    <rect class="bar g" x="160" y="340" width="600" height="40"/><text x="772" y="368" class="v">歐盟建議 80</text>
-    <rect class="bar e" x="160" y="390" width="268" height="40" data-g="2" data-d=".1"/><text x="440" y="418" class="v e" data-s="2">台灣 35.7</text>
-  </svg>
-  <div class="caps">
-    <p class="cap">用車樁比來看，就是幾台車分一槍，數字越小越好。灰色是歐盟的建議值：整體 10 台一槍、快充 80 台一槍。</p>
-    <p class="cap">台灣整體 9.2 台車一槍、快充 35.7 台車一槍，兩個都比歐盟建議值好。</p>
-  </div>
-  <p class="src">中央社（2026/9/15）、TVBS 車勢（交通部，截至 2026/7 底）</p>
 </section>
 
 <!-- 第 5 幕：混動分類 -->
-<section class="scene" id="s5" data-theme="ev" data-part="3" data-steps="3">
+<section class="scene" id="s5" data-theme="ev" data-part="1" data-steps="3">
   <p class="concl"><small>7-1 混動車的分類</small>看引擎能不能直接推輪子、電池有多大</p>
   <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="串聯、並聯、串並聯三種混動架構">
     <g class="key" transform="translate(-300,450)"><line x1="700" y1="22" x2="740" y2="22" class="o"/><text x="748" y="29">引擎</text><line x1="850" y1="22" x2="890" y2="22" class="eL"/><text x="898" y="29">電</text></g>
@@ -334,7 +96,7 @@
     </g>
   </svg>
   <div class="caps">
-    <p class="cap">充電再快，還是得找樁。另一條路是車上自己帶引擎，就是混合動力。分類第一個方法看結構。串聯式：引擎只帶發電機，深灰色的線碰不到輪子，輪子永遠是馬達在推。</p>
+    <p class="cap">混動車就是車上同時有引擎和馬達。分類第一個方法看結構。串聯式：引擎只帶發電機，深灰色的線碰不到輪子，輪子永遠是馬達在推。</p>
     <p class="cap">並聯式：引擎和馬達都接到輪子上，可以一起推，但引擎轉速和車速綁在一起，要靠變速箱。</p>
     <p class="cap">串並聯式兩種都能做：引擎的力可以一部分直接推輪子、一部分拿去發電。豐田就是這一種。</p>
   </div>
@@ -342,7 +104,7 @@
 </section>
 
 <!-- 第 5b 幕：依電池大小分 -->
-<section class="scene" id="s5b" data-theme="ev" data-part="3" data-steps="1">
+<section class="scene" id="s5b" data-theme="ev" data-part="1" data-steps="1">
   <p class="concl"><small>7-1 混動車的分類</small>第二種分法：電池有多大</p>
   <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="依電池容量分類混動車">
     <!-- x = 200 + kWh × 14 -->
@@ -358,8 +120,31 @@
   <p class="src">電池容量為各類典型值</p>
 </section>
 
+<!-- 第 5c 幕：混動為什麼省油 -->
+<section class="scene" id="s5c" data-theme="ev" data-part="1" data-steps="2">
+  <p class="concl"><small>7-1 混動為什麼省油</small>走走停停的市區，混動省最多</p>
+  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="同一台 Corolla 汽油版與油電版，市區和高速的油耗">
+    <text x="20" y="60" class="s">省油三招：<tspan class="b">停車熄火</tspan>、<tspan class="e b">煞車回收電</tspan>、<tspan class="b">引擎待在最省油的轉速</tspan></text>
+    <text x="20" y="104" class="rowt">同一台豐田 Corolla，每 100 km 油耗（L）</text>
+    <!-- width = L × 60 -->
+    <text x="20" y="200" class="nm">市區</text>
+    <rect class="bar g" x="160" y="166" width="444" height="40"/><text x="616" y="194" class="v">汽油 7.4</text>
+    <rect class="bar e" x="160" y="216" width="264" height="40" data-g="2"/><text x="436" y="244" class="v e" data-s="2">油電 4.4</text>
+    <text x="760" y="228" class="big e" data-s="2">省 4 成</text>
+    <text x="20" y="380" class="nm">高速</text>
+    <rect class="bar g" x="160" y="346" width="342" height="40"/><text x="514" y="374" class="v">汽油 5.7</text>
+    <rect class="bar e" x="160" y="396" width="306" height="40" data-g="2" data-d=".1"/><text x="478" y="424" class="v e" data-s="2">油電 5.1</text>
+    <text x="760" y="408" class="big" data-s="2">省 1 成</text>
+  </svg>
+  <div class="caps">
+    <p class="cap">分類講完，先回答一個最基本的問題：混動為什麼省油？三招：停車時引擎熄火、煞車時馬達反過來發電把能量收回電池、引擎盡量待在最省油的轉速。拿同一台豐田 Corolla 來比，灰色是汽油版。</p>
+    <p class="cap">換成油電版，市區從 7.4 降到 4.4 公升，省四成；高速只從 5.7 降到 5.1，省一成。因為這三招都發生在走走停停的時候，高速一直巡航，就沒什麼好回收的。</p>
+  </div>
+  <p class="src">美國 EPA 油耗標示（fueleconomy.gov），2026 Corolla LE 汽油 32/41 mpg、Hybrid LE 53/46 mpg，換算成 L/100 km</p>
+</section>
+
 <!-- 第 6 幕：豐田 THS -->
-<section class="scene" id="s6" data-theme="ev" data-part="3" data-steps="3">
+<section class="scene" id="s6" data-theme="ev" data-part="2" data-steps="3">
   <p class="concl"><small>7-2 豐田汽車的串並聯式混合動力車</small>一組行星齒輪，就是一台無段變速箱</p>
   <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="豐田 THS 行星齒輪與列線圖">
     <!-- 行星齒輪 -->
@@ -395,7 +180,7 @@
 </section>
 
 <!-- 第 7 幕：本田 e:HEV -->
-<section class="scene" id="s7" data-theme="ev" data-part="3" data-steps="2">
+<section class="scene" id="s7" data-theme="ev" data-part="2" data-steps="2">
   <p class="concl"><small>7-3 本田汽車的混合動力車</small>大多時候引擎只發電，高速才直接推輪子</p>
   <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="本田 e:HEV 雙馬達架構與三種行駛模式">
     <g transform="translate(0,80)">
@@ -427,7 +212,7 @@
 </section>
 
 <!-- 第 7b 幕：豐田 vs 本田 -->
-<section class="scene" id="s7b" data-theme="ev" data-part="3" data-steps="2">
+<section class="scene" id="s7b" data-theme="ev" data-part="2" data-steps="2">
   <p class="concl"><small>7-2、7-3 豐田與本田</small>做法不同，目標一樣</p>
   <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="豐田與本田混動做法比較">
     <image href="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/toyota.svg" x="200" y="50" width="100" height="100" class="logo"/>
@@ -474,9 +259,32 @@
   <div class="caps">
     <p class="cap">插電式混動就是全混再加大電池和充電孔：電池 10 到 20 度，純電可以跑 50 到 100 公里，日常通勤幾乎用電。</p>
     <p class="cap">現在賣最多的是比亞迪 DM-i，第五代引擎熱效率 46%，沒電時油耗 100 公里 2.9 公升，一般油車大約 7 公升；油加滿、電充滿可以跑 2,100 公里。這是官方最好的數字。</p>
-    <p class="cap">增程式是另一種插電：電池更大，引擎只發電、從不推輪子，在中國很流行。</p>
+    <p class="cap">增程式是另一種插電：電池更大，引擎只發電、從不推輪子，在中國很流行。但只發電也有代價，下一頁看。</p>
   </div>
   <p class="src">CnEVPost（2024/5/28）；Wikipedia「BYD Qin L DM-i」。2.9 L 為官方虧電最佳值</p>
+</section>
+
+<!-- 第 8c 幕：增程式的代價 -->
+<section class="scene" id="s8c" data-theme="ev" data-part="3" data-steps="2">
+  <p class="concl"><small>7-4 增程式的代價</small>油先變電再推車，高速會多損失一截</p>
+  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="引擎直接推輪子和先發電再推輪子的效率比較">
+    <g class="key" transform="translate(-300,0)"><line x1="700" y1="22" x2="740" y2="22" class="o"/><text x="748" y="29">引擎（機械）</text><line x1="900" y1="22" x2="940" y2="22" class="eL"/><text x="948" y="29">電</text></g>
+    <text x="20" y="110" class="nm">直接推</text>
+    <text x="180" y="110" class="s">引擎</text><line class="o" x1="240" y1="102" x2="420" y2="102"/><text x="440" y="110" class="s">齒輪</text><line class="o" x1="500" y1="102" x2="680" y2="102"/><text x="700" y="110" class="s">輪子</text>
+    <text x="20" y="200" class="nm">先發電</text>
+    <text x="180" y="200" class="s">引擎</text><line class="o" x1="240" y1="192" x2="300" y2="192"/><text x="310" y="200" class="s">發電機</text><line class="eL" x1="390" y1="192" x2="450" y2="192"/><text x="460" y="200" class="s">逆變器</text><line class="eL" x1="540" y1="192" x2="600" y2="192"/><text x="610" y="200" class="s">馬達</text><line class="eL" x1="666" y1="192" x2="690" y2="192"/><text x="700" y="200" class="s">輪子</text>
+    <g data-s="2">
+      <text x="20" y="300" class="rowt">引擎輸出有幾成送到輪子（示意估算）</text>
+      <!-- width = % × 6 -->
+      <text x="20" y="372" class="nm">直接推</text><rect class="bar o" x="180" y="346" width="570" height="40" data-g="2"/><text x="762" y="374" class="v">約 95%</text>
+      <text x="20" y="452" class="nm">先發電</text><rect class="bar e" x="180" y="426" width="510" height="40" data-g="2" data-d=".1"/><text x="702" y="454" class="v e">約 85%</text>
+    </g>
+  </svg>
+  <div class="caps">
+    <p class="cap">增程式聽起來很理想：引擎只發電，永遠待在最省油的轉速。但它有代價。引擎直接推輪子，中間只隔一組齒輪；先發電的話，要經過發電機、逆變器、馬達三關，每一關都會損失一點。</p>
+    <p class="cap">粗估下來，直接推大約 95% 送到輪子，先發電大約 85%，多損失一成。市區靠回收補得回來，高速巡航就補不回來。所以本田才在高速把離合器接上，讓引擎直接推輪子。</p>
+  </div>
+  <p class="src">效率為各元件典型值相乘的示意估算（發電機、逆變器、馬達各約 95%），非實測</p>
 </section>
 
 <!-- 第 8b 幕：插電式市場 -->
@@ -546,22 +354,22 @@
 
 <!-- 第 10 幕：結論 -->
 <section class="scene" id="s10" data-theme="ev" data-part="5" data-steps="3">
-  <p class="concl">插頭在統一，引擎在讓位</p>
+  <p class="concl">引擎在讓位</p>
   <div class="cols">
-    <div class="col l"><p class="q"><b>插頭</b>：按地區收斂</p><p class="qn">北美 → NACS；台灣 CCS1＋特斯拉<br>功率 350 → 1,000 kW</p></div>
-    <div class="col r"><p class="q"><b>引擎</b>：從推輪子變發電機</p><p class="qn">豐田分配 → 本田多半發電 → 增程只發電<br>2026 新車：家用車省油、跑車補力</p></div>
+    <div class="col l"><p class="q"><b>引擎</b>：從推輪子變發電機</p><p class="qn">豐田分配 → 本田多半發電 → 增程只發電<br>但高速時，直接推還是比較省</p></div>
+    <div class="col r"><p class="q"><b>電</b>：做引擎做不好的事</p><p class="qn">市區省 4 成、高速省 1 成<br>2026 新車：家用車省油、跑車補力</p></div>
   </div>
   <div class="watch" data-s="2">
     <p class="wk">之後要盯</p>
-    <div class="w"><b>4,188</b>台灣快充槍數<small>2026/7 底</small></div>
-    <div class="w"><b>NACS</b>北美原生插頭車款<small>約 2027 成為預設</small></div>
-    <div class="w"><b>3,000</b>比亞迪歐洲閃充站<small>年底目標</small></div>
     <div class="w"><b>33.2%</b>全球新車電動化<small>含油電，2026 Q2</small></div>
+    <div class="w"><b>−25%</b>中國插電式銷量<small>2026 年 1–9 月</small></div>
+    <div class="w"><b>29%</b>歐洲插電車裡的中國製<small>2026 年至今</small></div>
+    <div class="w"><b>46%</b>引擎熱效率<small>比亞迪第五代 DM</small></div>
   </div>
   <p class="end" data-s="3">謝謝大家　<span>↓ 往下是參考資料</span></p>
   <div class="caps">
-    <p class="cap">回到兩個問題。插頭會統一嗎？會，但按地區：北美收斂到 NACS，台灣還是 CCS1 加特斯拉；功率從 350 往 1,000 kW 走。引擎還在做什麼？它在讓位：從豐田的分配、本田的多半只發電，到增程式完全只發電；2026 的新車裡，家用車拿電省油，跑車拿電補力。</p>
-    <p class="cap">之後可以盯四個數字：台灣快充槍數、北美原生 NACS 車款、比亞迪歐洲閃充站數、全球新車電動化比例。</p>
+    <p class="cap">回到開頭的問題：混動車的引擎還在做什麼？它在讓位：從豐田的齒輪分配、本田的多半只發電，到增程式完全只發電。但高速時引擎直接推輪子還是比較省，所以它還沒完全退場。電則負責引擎做不好的事：市區省四成油，家用車拿來省油，跑車拿來補力。</p>
+    <p class="cap">之後可以盯四個數字：全球新車電動化比例、中國插電式銷量、歐洲插電車裡的中國製占比，還有引擎熱效率還能不能再往上。</p>
     <p class="cap">資料來源都在最後。謝謝大家。</p>
   </div>
 </section>
@@ -569,21 +377,16 @@
 <footer class="refs">
   <h2>參考資料</h2>
   <ol>
-    <li>交通部數字：中央社〈交通部建構環台電動車充電路網 公共充電樁逾1.6萬槍〉2026/9/15；TVBS 車勢。</li>
-    <li>Wikipedia：North American Charging Standard；Tesla Supercharger（2026/10/1 數字）；BYD Flash Charging；BYD Qin L DM-i。</li>
-    <li>J3400 (NACS) Market Development Update，reginfo.gov。</li>
-    <li>CnEVPost：BYD begins large-scale deployment of megawatt flash charging facilities（2026/2/24）；BYD launches 5th-gen DM tech（2024/5/28）。</li>
-    <li>Carscoops：BYD's New Megawatt Flash Chargers Are Coming To Europe（2026/4）；electrive.com。</li>
+    <li>美國 EPA：fueleconomy.gov，2026 Toyota Corolla LE／Corolla Hybrid LE 油耗標示。</li>
+    <li>CnEVPost：BYD launches 5th-gen DM tech（2024/5/28）。Wikipedia：BYD Qin L DM-i。</li>
     <li>Toyota USA Newsroom：2026 RAV4。Honda News：2026 Honda Prelude Press Kit。TVBS 車勢、U-CAR：台灣 RAV4 上市與 RAV4 PHEV（2026/1、2026/6）。</li>
     <li>Nissan News、CarExpert：2026 Qashqai e-POWER。Jalopnik、Cars.com：2026 Hyundai Palisade Hybrid。GreenCars：Porsche 911 GTS T-Hybrid。CarExpert：Ferrari 849 Testarossa。</li>
-    <li>TrendForce：Global NEV Sales Rise 10.4% YoY in 2Q26（2026/8/25）。</li>
-    <li>標準：IEC 61851-1；SAE J1772、J3400、J2954。</li>
+    <li>TrendForce：Global NEV Sales Rise 10.4% YoY in 2Q26（2026/8/25）。Benchmark Mineral Intelligence（經 Future Market Insights 轉述）。</li>
   </ol>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-<script src="app.js?v=1116l"></script>
+<script src="app.js?v=1116h"></script>
 </body>
 </html>
