@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1116k">
+<link rel="stylesheet" href="style.css?v=1116l">
 </head>
 <body>
 
@@ -127,23 +127,23 @@
 <!-- 第 2 幕：充電模式 -->
 <section class="scene" id="s2" data-theme="ev" data-part="1" data-steps="4">
   <p class="concl"><small>6-2 充電之主要模式</small>功率越大，保護和通訊就要越多</p>
-  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="IEC 61851 四種充電模式的功率比較（對數刻度）">
-    <!-- 刻度：x = 260 + log10(kW) × 190 -->
+  <svg class="viz" viewBox="0 0 1000 540" role="img" aria-label="IEC 61851 四種充電模式的功率比較">
+    <!-- 刻度：x = 300 + log10(kW) × 220 -->
     <g class="axis">
-      <line x1="260" y1="60" x2="260" y2="380"/><line x1="450" y1="60" x2="450" y2="380"/><line x1="640" y1="60" x2="640" y2="380"/><line x1="830" y1="60" x2="830" y2="380"/>
-      <text x="260" y="404">1 kW</text><text x="450" y="404">10</text><text x="640" y="404">100</text><text x="830" y="404">1,000</text>
-      <text x="545" y="40" class="ttl">功率（對數刻度，每格差 10 倍）　　　　　60 度電充滿約</text>
+      <line x1="300" y1="60" x2="300" y2="380"/><line x1="520" y1="60" x2="520" y2="380"/><line x1="740" y1="60" x2="740" y2="380"/><line x1="960" y1="60" x2="960" y2="380"/>
+      <text x="300" y="404">1 kW</text><text x="520" y="404">10</text><text x="740" y="404">100</text><text x="960" y="404">1,000</text>
     </g>
-    <g class="mrow"><text x="20" y="98" class="nm">模式 1</text><text x="20" y="124">家用插座，沒有保護</text>
-      <rect class="bar e3" x="260" y="86" width="57" height="40" data-g="1"/><text x="327" y="114" class="v">約 2 kW</text><text x="850" y="114" class="t">約 30 小時</text></g>
-    <g class="mrow" data-s="2"><text x="20" y="178" class="nm">模式 2</text><text x="20" y="204">隨車線，線上控制盒保護</text>
-      <rect class="bar e3" x="260" y="166" width="99" height="40" data-g="2"/><text x="369" y="194" class="v">約 3 kW</text><text x="850" y="194" class="t">約 18 小時</text></g>
-    <g class="mrow" data-s="2"><text x="20" y="258" class="nm">模式 3</text><text x="20" y="284">交流樁，樁車互相通訊</text>
-      <rect class="bar e2" x="260" y="246" width="255" height="40" data-g="2" data-d=".15"/><text x="525" y="274" class="v">7–22 kW</text><text x="850" y="274" class="t">3–9 小時</text></g>
-    <g class="mrow" data-s="3"><text x="20" y="338" class="nm">模式 4</text><text x="20" y="364">直流快充，樁內整流</text>
-      <rect class="bar e" x="260" y="326" width="484" height="40" data-g="3"/>
-      <rect class="bar e ext" x="744" y="326" width="86" height="40" data-g="3" data-d=".25"/>
-      <text x="610" y="354" class="v in">50–350 kW</text><text x="787" y="354" class="v in">1,000</text><text x="850" y="354" class="t">約 20–40 分</text></g>
+    <text x="20" y="40" class="rowt">充電模式</text>
+    <g class="mrow"><text x="20" y="116" class="nm"><tspan class="e">1</tspan>　家用插座</text>
+      <rect class="bar e3" x="300" y="86" width="66" height="40" data-g="1"/><text x="378" y="114" class="v">約 2 kW</text></g>
+    <g class="mrow" data-s="2"><text x="20" y="196" class="nm"><tspan class="e">2</tspan>　隨車充電線</text>
+      <rect class="bar e3" x="300" y="166" width="105" height="40" data-g="2"/><text x="417" y="194" class="v">約 3 kW</text></g>
+    <g class="mrow" data-s="2"><text x="20" y="276" class="nm"><tspan class="e">3</tspan>　交流充電樁</text>
+      <rect class="bar e2" x="300" y="246" width="295" height="40" data-g="2" data-d=".15"/><text x="607" y="274" class="v">7–22 kW</text></g>
+    <g class="mrow" data-s="3"><text x="20" y="356" class="nm"><tspan class="e">4</tspan>　直流快充</text>
+      <rect class="bar e" x="300" y="326" width="560" height="40" data-g="3"/>
+      <rect class="bar e ext" x="860" y="326" width="100" height="40" data-g="3" data-d=".25"/>
+      <text x="580" y="354" class="v in">50–350 kW</text><text x="910" y="354" class="v in">1,000</text></g>
     <g data-s="4">
       <g class="card"><rect x="60" y="436" width="420" height="80" rx="10"/><text x="84" y="470" class="nm">換電</text><text x="84" y="500">Gogoro、蔚來：直接換一顆滿電電池</text></g>
       <g class="card"><rect x="520" y="436" width="420" height="80" rx="10"/><text x="544" y="470" class="nm">無線充電</text><text x="544" y="500">SAE J2954，最高 11 kW</text></g>
@@ -155,7 +155,7 @@
     <p class="cap">模式 4 是直流快充，50 到 350 kW，現在已經往 1,000 kW 走。這張圖是對數刻度，每一格差十倍。用 60 度電的電池算：插座要充一天多，快充大約半小時到八成。</p>
     <p class="cap">另外兩種補能方式：換電，像台灣的 Gogoro、中國的蔚來；還有無線充電，SAE J2954 標準最高 11 kW。</p>
   </div>
-  <p class="src">IEC 61851-1；SAE J2954。充電時間＝60 kWh ÷ 功率的估算，快充以 10→80% 計，非實測</p>
+  <p class="src">IEC 61851-1；SAE J2954</p>
 </section>
 
 <!-- 第 3 幕：充電樁設備 -->
@@ -584,6 +584,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-<script src="app.js?v=1116k"></script>
+<script src="app.js?v=1116l"></script>
 </body>
 </html>
