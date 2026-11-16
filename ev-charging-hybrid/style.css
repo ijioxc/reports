@@ -175,3 +175,12 @@ html.notes .caps { display: block; }
   .src { display: none; }
   #progress li { padding: .15rem .4rem; }
 }
+
+/* 封面：問題與答案分開出現 */
+.qa { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; pointer-events: none; }
+.qa p { margin: 0; }
+.qa .qk { font-size: 1.1rem; font-weight: 700; color: var(--mute); letter-spacing: .15em; }
+.qa .qb { margin-top: 1.2rem; font-size: 5.2rem; font-weight: 900; line-height: 1.25; }
+.qa .qb .e { color: var(--e); }
+.qa .qs { margin-top: 1.8rem; font-size: 1.8rem; font-weight: 700; color: var(--mute); }
+@media (max-width: 700px) { .qa .qb { font-size: 3rem; } .qa .qs { font-size: 1.2rem; } }
